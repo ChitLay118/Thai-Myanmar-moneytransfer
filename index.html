@@ -139,7 +139,7 @@
         let currentRates = {
             THB_TO_MMK: 121.95, 
             MMK_TO_THB: 126.58, 
-            rateHomeDeliveryTHB: 820, // New name for the rate, previously Deposit Account
+            rateHomeDeliveryTHB: 820, 
             lastUpdated: 'Loading...'
         };
         let adminBankInfo = {
@@ -160,9 +160,9 @@
                 transfer: 'ငွေလွဲရန်',
                 inbox: 'အဝင်စာ',
                 profile: 'Profile',
-                adminPanel: 'စီမံခန့်ခွဲမှု', // Added for the nav button
+                adminPanel: 'စီမံခန့်ခွဲမှု', 
                 rateTitle: 'ငွေလဲနှုန်း (၁ ဘတ်လျှင် မြန်မာကျပ်)',
-                homeDeliveryRateTitle: 'အိမ်သို့ ငွေလွဲရန် (Home Delivery Rate)', // Updated Title
+                homeDeliveryRateTitle: 'အိမ်သို့ ငွေလွဲရန် (Home Delivery Rate)', 
                 thbToMmk: 'ထိုင်းမှ',
                 mmkToThb: 'မြန်မာမှ',
                 thb: 'ဘတ်',
@@ -413,7 +413,7 @@
                     const data = docSnap.data();
                     currentRates.THB_TO_MMK = data.rateBuyMMK || 121.95; 
                     currentRates.MMK_TO_THB = data.rateBuyTHB || 126.58; 
-                    currentRates.rateHomeDeliveryTHB = data.rateHomeDeliveryTHB || 820; // Updated Name
+                    currentRates.rateHomeDeliveryTHB = data.rateHomeDeliveryTHB || 820; 
                     
                     const timestamp = data.lastUpdated;
                     if (timestamp) {
@@ -678,6 +678,7 @@
             `;
         };
 
+        // ** ပြင်ဆင်ထားသည့် function **
         const updateBankImages = async () => {
             if (!isAdmin) return showMessage('Admin လုပ်ဆောင်ချက်သာ ဖြစ်သည်', 'error');
             const file1 = document.getElementById('bankImage1File').files[0];
@@ -710,7 +711,8 @@
 
             } catch (e) {
                 console.error("Error updating bank images: ", e);
-                showMessage('ပုံအပ်လုဒ်လုပ်ရာတွင် အမှားရှိသည်', 'error');
+                let errorMessage = 'ဘဏ်ပုံ အပ်ဒိတ်လုပ်ရာတွင် အမှားရှိသည် (သို့) ပုံတင်ရာတွင် ပြဿနာရှိပါသည်။ Console ကို စစ်ဆေးပါ (Security Rules ပြဿနာ ဖြစ်နိုင်သည်)။';
+                showMessage(errorMessage, 'error');
             } finally {
                 document.getElementById('loading-overlay').classList.add('hidden');
             }
@@ -897,6 +899,7 @@
         };
         window.setTransferTab = setTransferTab;
 
+        // ** ပြင်ဆင်ထားသည့် function **
         const submitTransfer = async (transferType) => {
             if (!userId) return showMessage('အသုံးပြုသူအချက်အလက် မရှိပါ', 'error');
 
@@ -931,8 +934,9 @@
 
             document.getElementById('loading-overlay').classList.remove('hidden');
 
-            let receiptImageURL = '';
             try {
+                // --- 1. Upload Logic ---
+                let receiptImageURL = '';
                 const fileExtension = receiptFile.name.split('.').pop();
                 const fileName = `${userId}_${Date.now()}_receipt.${fileExtension}`;
                 const storagePath = `artifacts/${APP_ID}/transfers/receipts/${fileName}`;
@@ -940,13 +944,8 @@
                 
                 const uploadResult = await uploadBytes(storageRef, receiptFile);
                 receiptImageURL = await getDownloadURL(uploadResult.ref);
-            } catch (e) {
-                console.error("Error uploading receipt: ", e);
-                document.getElementById('loading-overlay').classList.add('hidden');
-                return showMessage('ပုံတင်ရာတွင် အမှားရှိပါသည်', 'error');
-            }
 
-            try {
+                // --- 2. Firestore Logic ---
                 const transfersColRef = collection(db, PUBLIC_DATA_PATH, 'transfers');
                 const newTransferRef = doc(transfersColRef);
                 
@@ -975,9 +974,11 @@
                 showScreen('home');
 
             } catch (e) {
-                console.error("Error submitting transfer: ", e);
-                showMessage('ငွေလွဲမှု တောင်းဆိုချက် ပို့ရာတွင် အမှားရှိပါသည်', 'error');
+                console.error("Error in transfer process (Upload or Firestore): ", e);
+                let errorMessage = 'ငွေလွဲမှု တောင်းဆိုချက် ပို့ရာတွင် အမှားရှိပါသည် (သို့) ပုံတင်ရာတွင် ပြဿနာရှိပါသည်။ Console ကို စစ်ဆေးပါ (Security Rules ပြဿနာ ဖြစ်နိုင်သည်)။';
+                showMessage(errorMessage, 'error');
             } finally {
+                // Ensure loading spinner is always hidden, regardless of success or failure
                 document.getElementById('loading-overlay').classList.add('hidden');
             }
         };

@@ -1,0 +1,904 @@
+{
+    "videos": {
+        "action": [
+            {
+                "title": "ဂျက်လီ တရုပ်သိုင်းကား",
+                "thumb": "https://i.ytimg.com/vi/x9dzRs-tr5w/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4AY4DgALiAYoCDAgAEAEYciBDKDkwDw==&rs=AOn4CLCcMdUWELOW5s1doaRQ-Ktytmpczg",
+                "src": "https://www.youtube.com/embed/x9dzRs-tr5w"
+            },
+            {
+                "title": "Jet Li - The Defender",
+                "thumb": "https://i.ytimg.com/vi/E5WQL43Q_6Y/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4Af4EgALoAooCDAgAEAEYciBQKEAwDw==&rs=AOn4CLBnUaebRs_LhLyxQZKphPH-TXRmzw",
+                "src": "https://www.youtube.com/embed/E5WQL43Q_6Y"
+            },
+            {
+                "title": "ဂျက်ကီချမ်း",
+                "thumb": "https://i.ytimg.com/vi/vJyIaOs2LNs/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCpmEEspkxGg-xE5V2htkVuhdy44Q",
+                "src": "https://www.youtube.com/embed/vJyIaOs2LNs"
+            },
+            {
+                "title": "ဂျက်ကီချန်း မြန်မာ စာတန်ထိုး",
+                "thumb": "https://i.ytimg.com/vi/_vkSCNeVxj0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDB06gjvG6_-vJTQ7Pr-MjL-jdTxg",
+                "src": "https://www.youtube.com/embed/_vkSCNeVxj0"
+            },
+            {
+                "title": "ဒိုရိုရို",
+                "thumb": "https://i.ytimg.com/vi/HUjW40V0_hM/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4AdQGgALgA4oCDAgAEAEYfyBdKBcwDw==&rs=AOn4CLDhwohhy4LAZDPxC1UdQFZrv1Z2Cg",
+                "src": "https://www.youtube.com/embed/HUjW40V0_hM"
+            },
+            {
+                "title": "မြန်မာစာတန်းထိုး တရုတ်ဇာတ်ကြမ်း",
+                "thumb": "https://i.ytimg.com/vi/APH-YOVeFWU/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCrnN1cXT0EdK5qTq5DiqprEOweHQ",
+                "src": "https://www.youtube.com/embed/APH-YOVeFWU"
+            },
+            {
+                "title": "တရုတ်သိုင်းကား",
+                "thumb": "https://i.ytimg.com/vi/oJyg3fSd3vo/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAx_BvDBJfANRp1HxYRd-zEnug_EA",
+                "src": "https://www.youtube.com/embed/oJyg3fSd3vo?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "Demon Hunter Yan Chixia (2021)",
+                "thumb": "https://i.ytimg.com/vi/UDDzUezrjyM/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAWU0OrLAfyhKi0AJv34DrtktGeVA",
+                "src": "https://www.youtube.com/embed/UDDzUezrjyM?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်သိုင်းကား",
+                "thumb": "https://i.ytimg.com/vi/c_UukMBrqBY/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBEyIVhU6rGRikzZf_wVlP9qruBLw",
+                "src": "https://www.youtube.com/embed/c_UukMBrqBY?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်သိုင်းကား(LEGEND OF DADAO)",
+                "thumb": "https://i.ytimg.com/vi/wgQ5dyGLuuA/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4Af4EgALoAooCDAgAEAEYQyBlKD8wDw==&rs=AOn4CLDAjd2sDVIUAtFxYj-edZOIep_FfQ",
+                "src": "https://www.youtube.com/embed/wgQ5dyGLuuA?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်နှင့် ဂျပန် ဇာတ်ကားကောင်း",
+                "thumb": "https://i.ytimg.com/vi/I8KGIYMOh5M/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLA3BRbtQug_1ZqzYlocfea7XHnXkA",
+                "src": "https://www.youtube.com/embed/I8KGIYMOh5M?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်သရဲကား",
+                "thumb": "https://i.ytimg.com/vi/n0_I6-ARtR4/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBa_jwg5F4FU0iLqRV_bHQDSEJAyg",
+                "src": "https://www.youtube.com/embed/n0_I6-ARtR4?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "ဂြိုလ်မွေတဲ့ဧက္ကရာဇ်ဓါး",
+                "thumb": "https://i.ytimg.com/vi/Wz3ELnFrH30/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB25QO4ztBw0w2kyZDRfk9Qi8yj5g",
+                "src": "https://www.youtube.com/embed/Wz3ELnFrH30?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "ဂျက်ကီချန်း Gorgeous",
+                "thumb": "https://i.ytimg.com/vi/KTIUrRMjLGU/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCrAJJso66TzA0ijO83AkAjg_HkRA",
+                "src": "https://www.youtube.com/embed/KTIUrRMjLGU?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "သိုင်းကား စဆုံး",
+                "thumb": "https://i.ytimg.com/vi/v15cdwkpN9U/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4Af4JgALQBYoCDAgAEAEYMSBTKHIwDw==&rs=AOn4CLD5tZLH7sYU__jy5Oz7Q-rYu6j4-g",
+                "src": "https://www.youtube.com/embed/v15cdwkpN9U?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်သိုင်းကား",
+                "thumb": "https://i.ytimg.com/vi/RhjOxDols64/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLD-SiYyZ_R9Et8jN7mEs6iVb1SzOQ",
+                "src": "https://www.youtube.com/embed/RhjOxDols64?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "The SEVEN ARHAT kungfu kids",
+                "thumb": "https://i.ytimg.com/vi/RK4uyKaYsk4/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLASKPaW4MiN5gnL8LponhRtM9DESg",
+                "src": "https://www.youtube.com/embed/RK4uyKaYsk4?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "စစ်နတ်ဘုရား ကျောက်ကျိလုံ",
+                "thumb": "https://i.ytimg.com/vi/JUsOi0AzOeE/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBCyKXgsWm1ZvS8ypKIoiFPQcMtHg",
+                "src": "https://www.youtube.com/embed/JUsOi0AzOeE?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်နဲ့ပြင်သစ်စစ်ပွဲ",
+                "thumb": "https://i.ytimg.com/vi/w0lcJ9IN1XE/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAMBesoRI9MCPf50k61tC0JAp5g9w",
+                "src": "https://www.youtube.com/embed/w0lcJ9IN1XE?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "မြန်မာစာတန်းထိုး ဂျက်လီ",
+                "thumb": "https://i.ytimg.com/vi/P3TOfkBWC9c/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCjtfyhCHeISnjEShyAEk2LQsLpOw",
+                "src": "https://www.youtube.com/embed/P3TOfkBWC9c?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "Japanese soldiers beat a little girl",
+                "thumb": "https://i.ytimg.com/vi/RayXvkbRpfY/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDBufSbdS7-5e019DUaVtXMCaXH2g",
+                "src": "https://www.youtube.com/embed/RayXvkbRpfY?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "သွေးသောက်ဓားရဲ့ လွမ်းပုံပြင် 2020",
+                "thumb": "https://i.ytimg.com/vi/unkYwhVJFa4/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBmTdCqf4WewA-ckPinIvwh9hwOJg",
+                "src": "https://www.youtube.com/embed/unkYwhVJFa4?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်ရာဇဝင် အက်ရှင်",
+                "thumb": "https://i.ytimg.com/vi/UV9nMQckKwA/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDasE0FOt4R8IEfRTUwZIcXfLJlDw",
+                "src": "https://www.youtube.com/embed/UV9nMQckKwA?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "chinese Kung Fu",
+                "thumb": "https://i.ytimg.com/vi/z47LtHthzm0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAafkI06GssrK6d3_jxpofGJqqkjg",
+                "src": "https://www.youtube.com/embed/z47LtHthzm0?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "Chinese movie 1",
+                "thumb": "https://i.ytimg.com/vi/bj-TwM_UxsY/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4Ab4CgALwAYoCDAgAEAEYTSBAKHIwDw==&rs=AOn4CLBI6NzS8Jdwf8RYCntxC3z8eiSm-g",
+                "src": "https://www.youtube.com/embed/bj-TwM_UxsY?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "ရှောင်လင်သူရဲကောင်း(၁၈)ဖော်[ 2020 ]",
+                "thumb": "https://i.ytimg.com/vi/WmjpbFiFIbI/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBGS2eymlg3zoQZZ8-TjWFeRuFLKA",
+                "src": "https://www.youtube.com/embed/WmjpbFiFIbI?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်သိုင်းကား",
+                "thumb": "https://i.ytimg.com/vi/X-l-s-_53-s/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4Af4JgALQBYoCDAgAEAEYICBoKHIwDw==&rs=AOn4CLBfNlmFQSaszt8Pgx3WNwB6WsrXjQ",
+                "src": "https://www.youtube.com/embed/X-l-s-_53-s?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "2022မြန်မာစာတန်းထိုးဇာတ်ကားကောင်း",
+                "thumb": "https://i.ytimg.com/vi/kFvA7DuB29k/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4Af4JgALQBYoCDAgAEAEYZSBTKE0wDw==&rs=AOn4CLBzC_5FzondOnVSOecp8XnfU1SSrw",
+                "src": "https://www.youtube.com/embed/kFvA7DuB29k?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်ကားမြန်မာစာတန်းထိုး",
+                "thumb": "https://i.ytimg.com/vi/2E5ZKDbVqNQ/hqdefault.jpg?sqp=-oaymwFACKgBEF5IWvKriqkDMwgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAHwAQH4AagDgALwAYoCDAgAEAEYWyBgKGUwDw==&rs=AOn4CLAfaQAtUARgg1xRzYtH9yeRTw3s1g",
+                "src": "https://www.youtube.com/embed/2E5ZKDbVqNQ?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "တရုတ်သိုင်းဇတ်ကား",
+                "thumb": "https://i.ytimg.com/vi/oh82vCAFT_o/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDPap9lZhI9SufBh5z-eQ7a7tbDgg",
+                "src": "https://www.youtube.com/embed/oh82vCAFT_o?list=PL0sa7dis9WVtCUqeeUndDqhd1O3z7M7qO"
+            },
+            {
+                "title": "Swordsman 2 _ Jet Li_1992",
+                "thumb": "data:image/jpeg;base64,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",
+                "src": "https://www.youtube.com/embed/OYaLRBXo3So"
+            },
+            {
+                "title": "Live by Night",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/bkd46T4RplawnDjpHoI8mhzTLks-200x300.jpg",
+                "src": "https://mega.nz/embed/mZFzVByI#UqRrLkCu1xgLcHpFKS6CUPb5lno2g6Mvjh-fbANEdoU"
+            },
+            {
+                "title": "The Adjustment Bureau",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/A4wKf04g4DCVAWC67uPGozIJPGw-200x300.jpg",
+                "src": "https://mega.nz/embed/mEtjxR6D#nI3JYlTXOIudI0ZM0yWY_ngH4D0PlFswvjEps5ej3uo"
+            },
+            {
+                "title": "The Legend of Zorro",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/duZDsuIA2uX93Vujtm89oHeTFqE-200x300.jpg",
+                "src": "https://mega.nz/embed/2RlFwIZb#CHgdn-YMkSQ5vQCm-Y4WldQTF8YpGEk0iWW2OUVNg44"
+            },
+            {
+                "title": "Mission to Mars",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/beDWEWxgFlt1UWvf2al9cjDol2i-200x300.jpg",
+                "src": "https://mega.nz/embed/PR0WhRbZ#n_0yW9aX8WST-CEV1tKttYm1X2XEZwwLv6WftlKxWlE"
+            },
+            {
+                "title": "Brothers’ Nest",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/b2k7IdRHHuD2HZPZMWsZzRFUHoA-200x300.jpg",
+                "src": "https://mega.nz/embed/3cdlxaCQ#y54CFU4jiavHyDJhbYHj1mYRUtta_uPyCZsyi63WgQ8"
+            },
+            {
+                "title": "Kingdom IV",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/qZKKwXyZ92K0mIRpf2FbCkQa7oO-200x300.jpg",
+                "src": "https://mega.nz/embed/OY80HQ7L#JDp9RNRhO3iobNSYk5v9tPA3giICjm8Kxk16s0mehPU"
+            },
+            {
+                "title": "Operation Condor",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/vkj5JxVgY1ZYhX4pBHHgwdRNEkl-200x300.jpg",
+                "src": "https://mega.nz/embed/imJF2ZzI#Jijp-uZaZnCL_ijxiZQAnq-S5tdgz0qNE2NCDXMdkqU"
+            },
+            {
+                "title": "Armour of God",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/phCpGqCSBWJqutKxj73COACrlPt-200x300.jpg",
+                "src": "https://mega.nz/embed/3zJUyLBT#WWXqY1kypaiy-Pj1TSwZ2f4V5c29R9f5hLlHz9_2kuc"
+            },
+            {
+                "title": "Made in China",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/oxjRe2CRSblw0NmA4Uwpu9b4F0j-200x300.jpg",
+                "src": "https://mega.nz/embed/6AVxSQhD#yn0ypdvg7QQcmcBmxtGVRBZ3ZVY_7X-o0aBSA0g95hk"
+            },
+            {
+                "title": "The Perfect Storm",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/vJPoxqgpfFNbGi0HyoNsjFeLCio-200x300.jpg",
+                "src": "https://mega.nz/embed/WL5hTTrQ#vYTs-ee6YmNm-cks__0ovzm6IVn2KXjI0ZIWrQGqHq4"
+            },
+            {
+                "title": "Dead Hand",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/zB7SKChXDGJD9ADsOhskIFwD5gB-200x300.jpg",
+                "src": "https://mega.nz/embed/7fR1hbga#3zRlTH9VbMzHpqMScF7bR_YAQ1c3xSLuqtfkGr2XT7s"
+            },
+            {
+                "title": "Wolf Warrior 2",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/87aWrVqaVhXhblhO7sYHLC2y8TT-200x300.jpg",
+                "src": "https://mega.nz/embed/eyRH2IqY#0TgA_6esfVV4MK2T0B5yKXmhgTAbboPhIgI-9oRE7Rk"
+            },
+            {
+                "title": "Wolf Warrior",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/9tGyxJcPUQclngSCcT18oEs80Yn-200x300.jpg",
+                "src": "https://mega.nz/embed/P6RGQRJY#aN2njcQCoH9lj1pDhWmX_X7Kqp5wPnxlS9gDwtAv7bg"
+            },
+            {
+                "title": "Bureau 749",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/flykCMw22y6yv8vKnBjmsW3pneo-200x300.jpg",
+                "src": "https://mega.nz/embed/vdty3YqT#HABcWpMK6i91gHTl7hAyIxLhVvGmqFFPGll7hVUBtKM"
+            },
+            {
+                "title": "Vanguard",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/mKvw1Ic9enfFlCPBNJGiejRPMUO-200x300.jpg",
+                "src": "https://mega.nz/embed/CiJXxbxZ#paXuXi-5ITIHNTA8LssjM6Tpw-1FGfcyrlY4gHaHP8U"
+            },
+            {
+                "title": "Who Am I?",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/9YDKLbBmWGpxG5bO3TBawtNNOAr-200x300.jpg",
+                "src": "https://mega.nz/embed/GrBwWYzJ#8zTu-4guGjv4UGGRi7jO5q9mf3FzzkZZe_EErxc_JBc"
+            },
+            {
+                "title": "Inferno",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/cnqvFvjAaV28F1tU7986VVg0WP7-200x300.jpg",
+                "src": "https://mega.nz/embed/675TmD5Z#b8KFiEiDjRTcok_3SEiSmAYqQTo7PwQeWfTds5EbYG0"
+            },
+            {
+                "title": "Monster Island",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/5xAIFOgKouHNsSt1yEdqHloJszY-202x300.jpg",
+                "src": "https://mega.nz/embed/3lBBwQ4J#h4fgYQRYWSE-wqQpAXtaW03AhlLm3lJQsjvsTAg4yvc"
+            },
+            {
+                "title": "Civil War",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/sh7Rg8Er3tFcN9BpKIPOMvALgZd-200x300.jpg",
+                "src": "https://mega.nz/embed/jxB0UZjR#qOFXPwxx9opuUPZeHekjPyUOq5UnmjeFSiOt6Er_QhM"
+            },
+            {
+                "title": "F1 The Movie",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/9tisVFdcQYlUk6Ni1cz38rqFZia-200x300.jpg",
+                "src": "https://mega.nz/embed/igBHxI4B#s3YuTp2mSvb2_XpLvTnQqerZkIQLHmju2hjcAYoz1pE"
+            },
+            {
+                "title": "America Is Sinking",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/aJPnqK2kSM257FESP69HPTSWt3p-200x300.jpg",
+                "src": "https://mega.nz/embed/jdkklBDA#nQm_ImmG_M6SNEyG0gB4xK_QPpeMMIGkQGLYVscdDXA"
+            },
+            {
+                "title": "Osiris",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/3YtZHtXPNG5AleisgEatEfZOT2w-200x300.jpg",
+                "src": "https://mega.nz/embed/3JsQWBgA#SjJ4gd5Yhy3wGD22WFex6USbh2A0pkd1LGtCt6WGY24"
+            },
+            {
+                "title": "Red Eagle",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/9wnbQ9d9pQqfTe5uVHarZh8aW-200x300.jpg",
+                "src": "https://mega.nz/embed/bENWDR5b#ONPDpcHPvF7Zbuizv6FrgYCo3ZWlhRS7mLcbRl2W0KI"
+            },
+            {
+                "title": "Hitman: Agent Jun",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/dAt3nolyXLEEuXiIXZwv1iikbcA-200x300.jpg",
+                "src": "https://mega.nz/embed/CyADFCgQ#PQa-r41vjqDiPw-1qXV98jRwuNntePV05V2orlZ3Ei0"
+            },
+            {
+                "title": "Hitman: Agent 47",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/cx9AOBOv9Qf5ufZYQMbfTV7w7VY-200x300.jpg",
+                "src": "https://mega.nz/embed/imQWTAgY#WzxBSAH2ZBBijR1X5WiSJSpUVqH3tm9SclCd-Hkv55M"
+            },
+            {
+                "title": "Midway(2019)",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/hj8pyoNnynGeJTAbl7jcLZO8Uhx-200x300.jpg",
+                "src": "https://mega.nz/embed/0A4xyDrK#pa88xnAxRD56OHfhkFxtofLEsQe55RG1aA4BURuJ9Q8"
+            },
+            {
+                "title": "Midway(1976)",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/vCzGV28YFmWubUn1jh8ytagYocR-200x300.jpg",
+                "src": "https://mega.nz/embed/RNx11CIJ#XqEyL2mOkJN5s3RTkaUq2YuNHFJTG_E7n-F2dhkNWcA"
+            },
+            {
+                "title": "Hero",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/vxgZto2Cz7ILHAlmRXt50I2brB2-200x300.jpg",
+                "src": "https://mega.nz/embed/pIoDWJ5a#SvvquGZ0SJEpEuflM6whsQWmusOcZzZ3k7OV8gTDrHw"
+            },
+            {
+                "title": "The New Legend of ShaoLin",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/57kngzlMiKkn6yg5lDfcxNmcYF4-200x300.jpg",
+                "src": "https://mega.nz/embed/zkoRgRxI#QbIw1tsPrbx1AtCjlnx1_f8GeRfno5rJlflylUcQ3PU"
+            },
+            {
+                "title": "Terminator: Dark Fate",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/vqzNJRH4YyquRiWxCCOH0aXggHI-200x300.jpg",
+                "src": "https://mega.nz/embed/jcFVwIyD#fDv3jIQc67XaYPGG7bOdiOZvfVu-St64ecZ7cKagXZ0"
+            },
+            {
+                "title": "Terminator Genisys",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/oZRVDpNtmHk8M1VYy1aeOWUXgbC-200x300.jpg",
+                "src": "https://mega.nz/embed/LJNCECSC#zqIANiAdQZglq5mfJjkjxNCYx3BLNlRG6vl5mu_lNe0"
+            },
+            {
+                "title": "Terminator Salvation",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/gw6JhlekZgtKUFlDTezq3j5JEPK-200x300.jpg",
+                "src": "https://mega.nz/embed/uVFz3IrQ#yHOcjbc2_fK4P-AbA4EqilgI8ieLp2vcfo5KlsUtIX4"
+            },
+            {
+                "title": "Terminator 3",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/vvevzdYIrk2636maNW4qeWmlPFG-200x300.jpg",
+                "src": "https://mega.nz/embed/uc8EyQ7C#pgUhQ6BjrurxTs3pQcqBJKhh2S0lMFcPtIh0dwVqisM"
+            },
+            {
+                "title": "Terminator 2",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/weVXMD5QBGeQil4HEATZqAkXeEc-200x300.jpg",
+                "src": "https://mega.nz/embed/nE8nVCya#kmcPTy_qkHqbCrBNaXgOOwEdwhuNLXdSEIAFHfhx060"
+            },
+            {
+                "title": "The Terminator",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/hzXSE66v6KthZ8nPoLZmsi2G05j-200x300.jpg",
+                "src": "https://mega.nz/embed/fJs3iJhK#7mx0wusKV_LQ44EVZwOfxZCQt9ikm7B_isDt8kEvQeE"
+            },
+            {
+                "title": "Battlefield: Fall of The World",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/jJL2KJNUxxm7SIRBFN56j6Th5ES-200x300.jpg",
+                "src": "https://mega.nz/embed/2EtSVBiK#nOvTVEgWwYw9aykkUBCOU-nNPYABLk6UlIp8UUDBBmE"
+            },
+            {
+                "title": "Air Force One Down",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/nKPoSD4pZ3s3CJ9g3cqWRcQ41TC-200x300.jpg",
+                "src": "https://mega.nz/embed/7FlVFCCB#tkBOyvv4XBKBTDZk170HX5iXtHoBVg7iRVkJ7q64jIo"
+            },
+            {
+                "title": "Air Force One",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/juRFEbyx5JlNuYrZM50vcZmtN78-200x300.jpg",
+                "src": "https://mega.nz/embed/3V0EkIBT#4_JPtg21mfe1l6wMvGm7grEPlr5gBzxDcISZc94J1Yk"
+            },
+            {
+                "title": "Blade: Trinity",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/r6ycjrStmmAqiY1oDjAli9NArCa-200x300.jpg",
+                "src": "https://mega.nz/embed/y3RH0BII#IgO0CgaCTUMKRLWrzv9LGe0nDy4ZWwHjF1-3oopB1kc"
+            },
+            {
+                "title": "Blade II",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/azzTa03g0Fb8HC7O3521qq0oc8Q-200x300.jpg",
+                "src": "https://mega.nz/embed/fm4iVSaT#MrL2NqSFG7oHWxw0crMPl23waJm8nj8PC0mav4i3vnU"
+            },
+            {
+                "title": "Blade",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/hx0sdduAsr4rq03RZKZzglR25z7-200x300.jpg",
+                "src": "https://mega.nz/embed/CrhnWYCL#yx1JGZwQLo8EG_0twzIEOdh9kqnk43Ukmy24lfvs0XY"
+            },
+            {
+                "title": "Absolute Dominion",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/gTqTss9YJLigp0SFVtc4IXmE6zW-200x300.jpg",
+                "src": "https://mega.nz/embed/md8mWIJI#TltiP2-nMJNNiUmsl9W5rIGNwg_IGw-ktjXP0JhCuZk"
+            },
+            {
+                "title": "49",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/nJNbyUFUt3c14CoIjLSn8ZxPw-200x300.jpg",
+                "src": "https://mega.nz/embed/LcNgSZ6L#WQBR-ufLof_FE0-eIXPrmDK5MY5H0Rt0dtDRT0xqnzg"
+            },
+            {
+                "title": "Broken Arrow",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/iBPMwYYJFvdCBkXrwV75peo5Lz2-200x300.jpg",
+                "src": "https://mega.nz/embed/6iJFSTDR#PxZV5_4ilKGIInM0QberTe7lUArTWxnB5egGXpx4xpo"
+            },
+            {
+                "title": "Halabala",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/hUTeK0qiyGTwbq2XodP7T1sfWNl-210x300.jpg",
+                "src": "https://mega.nz/embed/7VMjzRQK#OEQAZLmvaMuT3c10QMx9KlsbMHOxrUZWwfrzMfAhwWM"
+            },
+            {
+                "title": "Dragon Blade",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/m5yyMErIDbdzVLIDXVBG6EzM1oF-200x300.jpg",
+                "src": "https://mega.nz/embed/Hm4TmJzA#G3XBO2QvDTIIeGAf1Gqp_w0ExwTFk3-skysbB7t0wk0"
+            },
+            {
+                "title": "Taandob",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/iplMLlXU1BgmTz4xviILTOlECYL-200x300.jpg",
+                "src": "https://mega.nz/embed/Z7t0SS7T#xDdr1dNg3_fR9hLJl4cCF8Q_ynECsbUoDlC49mVGNfs"
+            },
+            {
+                "title": "Red One",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/cdqLnri3NEGcmfnqwk2TSIYtddg-200x300.jpg",
+                "src": "https://mega.nz/embed/UulGCThI#e9uk5ei5BLs-knSra3Z7hTXepC0_wHRzdQ8YYUM1pSQ"
+            },
+            {
+                "title": "Species III",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/8BelHo8qmaurZjPS9hipSQ79Rr6-200x300.jpg",
+                "src": "https://mega.nz/embed/v9dx1ICY#l6z2QxXAZZySN21CI027AJAA2u0zvTSuwVdThYNE2Cw"
+            },
+            {
+                "title": "Species II",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/8LSBi0bHACZtIiVErUBQ2UXNYLA-200x300.jpg",
+                "src": "https://mega.nz/embed/T4tGBYxS#GnHti23xMfIQIC55wIQmnnLSxVSL_DAGaSBqrjIbiGc"
+            },
+            {
+                "title": "Species",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/cT5wdyo8kT7dycqjrolJ2sHWkFx-200x300.jpg",
+                "src": "https://mega.nz/embed/WpE2WQ5a#pucc6IyCzqkASCFvUOnNXZPKYZf24Spbh-2HJmm_RjQ"
+            },
+            {
+                "title": "Superman(2025)",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/ombsmhYUqR4qqOLOxAyr5V8hbyv-200x300.jpg",
+                "src": "https://mega.nz/embed/l78mRL5B#1RJlNDqeLv47W-OqBU55n2nFdzb8Lal3ucXqCNSEnhc"
+            },
+            {
+                "title": "Maaman",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/a0BsRj9qQu8L2arBAHcbbfrVrB7-200x300.jpg",
+                "src": "https://mega.nz/embed/9rVlTQCb#W4MNKjENxN6-R0SKWuO_LzGcLwSf_ETIQd5W48rRifw"
+            },
+            {
+                "title": "A Special Lady",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/bsmv8sDlVJsrSOHtdrimWxIjDCD-200x300.jpg",
+                "src": "https://mega.nz/embed/qVsgABZJ#hzRMO6l86STADcTrbzArrEW9jrOIn_myvpF24upwsuU"
+            },
+            {
+                "title": "City of Bones",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/zaK1aVn5vXfNwLIDop9U8XA3Q0x-200x300.jpg",
+                "src": "https://mega.nz/embed/ip8jjIhS#ddhcWX3RBnoiLodxulFWpEtF-vIZ0CL3L9bulDgu0NQ"
+            },
+            {
+                "title": "The Pickup",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/vFWvWhfAvij8UIngg2Vf6JV95Cr-200x300.jpg",
+                "src": "https://mega.nz/embed/nRkknKBb#ByRAdtgVacXT8dqMPF2bUvRjYlt66C7MKXGaoQ0fNOQ"
+            },
+            {
+                "title": "The Lone Ranger",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/xRmsqvHnaWmrazJl9bTBqs4LAjp-200x300.jpg",
+                "src": "https://mega.nz/embed/G81i2IDD#mWAj35euk3GoYjkdZXSprRhOzFVuHw4_1lxjPBSgCaM"
+            },
+            {
+                "title": "Broken Sword Hero",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/qWsGQKgrp6wpFXO8ShPbZgpdXDa-200x300.jpg",
+                "src": "https://mega.nz/embed/CFNAkAgT#6uE-kFZmNGgpIB3_QH0owhKcEkfE-Bg-fUFWCrJmr4U"
+            },
+            {
+                "title": "Atlas",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/bcM2Tl5HlsvPBnL8DKP9Ie6vU4r-200x300.jpg",
+                "src": "https://mega.nz/embed/mYF1VZKY#yGrndy7HOHKekDIqAgrhgr3sHpBgHYC-y5JX7RkIRB0"
+            },
+            {
+                "title": "Shang-Chi",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/d08HqqeBQSwN8i8MEvpsZ8Cb438-200x300.jpg",
+                "src": "https://mega.nz/embed/OgdFBT7R#OG2XlCNKdUAQB0FmNm8U4-dfgqI8VhlDcajCQ0TMZyg"
+            },
+            {
+                "title": "Legend Of Deification",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/eDq4dGgNHxPbT3Y5S6mfymsQ0rQ-200x300.jpg",
+                "src": "https://mega.nz/embed/FR8RHATB#L2wcjRE2u1Qz9U6p49GKSUzOo2FSPNs9R3fBkE77wGQ"
+            },
+            {
+                "title": "Wrath of the Titans",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/b9n2R3xZWQ8MVZgndQoV34stS0h-200x300.jpg",
+                "src": "https://mega.nz/embed/sNEhCaZC#KVF5pC6COV8fNT9fhFs9uXBhf9MN8HNSLamMnf71u7M"
+            },
+            {
+                "title": "Clash of the Titans",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/3W6QaC3Vz8UJhr6HRYuGfbNeJCs-200x300.jpg",
+                "src": "https://mega.nz/embed/NAd3kb6Q#QE5xQ4U8OyXxjeYTpAnX4XrUzrzo0AaNEguvXTTpIdM"
+            },
+            {
+                "title": "Kong: Skull Island",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/r2517Vz9EhDhj88qwbDVj8DCRZN-200x300.jpg",
+                "src": "https://mega.nz/embed/ZZdSAKAI#YAkf-1fcWwZf9uLTKYQMYENw8ckp72VrejJfMfX2auY"
+            },
+            {
+                "title": "King Kong",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/6a2HY6UmD7XiDD3NokgaBAXEsD2-200x300.jpg",
+                "src": "https://mega.nz/embed/kA1zyI5B#LFJOTPcCKqHBWtESCInFLCjOEEQ1O77PQgDjVGTG_wQ"
+            },
+            {
+                "title": "Creation of the Gods II",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/dfUCs5HNtGu4fofh83uiE2Qcy3v-200x300.jpg",
+                "src": "https://mega.nz/embed/SElCQS4S#4oQmHprebswyLzmMwzv8hwjT6V7nYLU13MVAmlcNlCo"
+            },
+            {
+                "title": "Creation of the Gods I",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/n3Vy8oJEGqvaFurE7e7QJbF4mGs-200x300.jpg",
+                "src": "https://mega.nz/embed/DIcB3K4D#ABZ5sKLmMnre-UmD49mQjSFQ8U_P4glAydd1A5ng44s"
+            },
+            {
+                "title": "Ne Zha 2",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/293Mo4GWf7Tl0TfAr5NFghqeMy7-200x300.jpg",
+                "src": "https://mega.nz/embed/aA9igAxb#OWdFxbqw6Djn3EgAYR8FpLXYa9P5Vz1LEImFrAyZkhQ"
+            },
+            {
+                "title": "The Longest Day",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/5zmvEofdIlgXrQl9A7e5IOzlnFU-200x300.jpg",
+                "src": "https://mega.nz/embed/eBdWlbDR#GjsUp_VJC71yVNQIVJH41tRVlgNg8lR_Xyn0Y7nWvnE"
+            },
+            {
+                "title": "Edge of Tomorrow",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/nBM9MMa2WCwvMG4IJ3eiGUdbPe6-200x300.jpg",
+                "src": "https://mega.nz/embed/0AtGjK5S#1s13Ei3D4NeYefomfgOI_XmhWU5NWV30YPPMxgh_kXo"
+            },
+            {
+                "title": "Concrete Utopia",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/4l68KHxnPSow8MvnGUpjqLzJtLJ-200x300.jpg",
+                "src": "https://mega.nz/embed/etQERLhI#_0PyhitKQFl56Z9yMZV3K3wV5ZB8LCYOWRcKP_3T8no"
+            },
+            {
+                "title": "Jurassic World Rebirth",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/1RICxzeoNCAO5NpcRMIgg1XT6fm-200x300.jpg",
+                "src": "https://mega.nz/embed/SwIRiBDL#sK42oed5j8ynFFkrE2yCAUz7D4yuEKIYlrVemgUahAM"
+            },
+            {
+                "title": "Soorarai Pottru",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/5uimlxPCgAei8JfQUDFEUQLoyyh-200x300.jpg",
+                "src": "https://mega.nz/embed/3c8GwTzK#qEcN3h3CM_dzWXwi3NQEr0DBITwQSVKjMVObGWqowBA"
+            },
+            {
+                "title": "Maa",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/kc5n7LJUmvBsVxzAla1ONN8kouP-200x300.jpg",
+                "src": "https://mega.nz/embed/mR9DDbSD#z8gTuRMxFVeGB7Q8mphs9X8g1HPJkAtZ0ftOitfi6fE"
+            },
+            {
+                "title": "Godse",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/cR9NesoY99WGQtQPViwbbthAWnt-200x300.jpg",
+                "src": "https://mega.nz/embed/eo43SCJZ#5FuyVAlSYCCuNLjvgvcRpEayjJUM1kE3M4vfvPaT4cs"
+            },
+            {
+                "title": "Kothapallilo Okappudu",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/renqstBr6YWrp0J0ngad4dnIrMl-200x300.jpg",
+                "src": "https://mega.nz/embed/KtwiRRjJ#2XVi4nUk4IGGtGR1CJa4DZx9WXzt1LlqPS5l6vqkgGU"
+            },
+            {
+                "title": "The Teacher",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/szlck49swaimG1UlITTiCa2F1Gy-200x300.jpg",
+                "src": "https://mega.nz/embed/jcsBTDSR#tfWEbuLc-D7lSWLufaeIc23F4sat2J1YnWzgH62cbQU"
+            },
+            {
+                "title": "Good Day",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/A87qj6W0SGjlGvFWtqf0i0Froer-200x300.jpg",
+                "src": "https://mega.nz/embed/nhoByCKK#Sl9hFNnlRFpsrmSy382jC1PQGvm0odq3VFgTB2OzjNg"
+            },
+            {
+                "title": "Akkenam",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/1tUVshO5qTfoZZ1lv4AlPFGnTnH-200x300.jpg",
+                "src": "https://mega.nz/embed/q44DnJbA#dHb65xBjIZ_TWqZXqzNbJc0VWol3Ivi3AxxiV6ZVkkA"
+            },
+            {
+                "title": "Badla",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/eKpzbERuhogYTwI3PwfVsAHXnuO-200x300.jpg",
+                "src": "https://mega.nz/embed/flsywJ4B#b2bpSZoJ0xfcU31v5f32Hsx97VbGGA8xvUL5AmiFR8Q"
+            },
+            {
+                "title": "Satyameva Jayate 2",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/y1ebOObyi97slwBTljIifE67PR5-200x300.jpg",
+                "src": "https://mega.nz/embed/OlFBjJQT#ZxNyWx6wkxDhksJXsRHhd4Bdmq1hTdKSwo9Uo_ow-Y4"
+            },
+            {
+                "title": "Satyameva Jayate",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/4cgcfxYE1UoNGISx9CrdhuKsXe3-200x300.jpg",
+                "src": "https://mega.nz/embed/WosQkajb#0hS2A9GjYsLA7YdVf9QiZMbInH0bMlbWzfH0ynLm-Fk"
+            },
+            {
+                "title": "Flight",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/cTidclJOxLIwqmV4zzMSs8goTu1-200x300.jpg",
+                "src": "https://mega.nz/embed/L9pzjbgJ#dR89fgSLsFt6qpIWE-FjOSXZTvU9pHpubAoCtvk_59s"
+            },
+            {
+                "title": "Kalki 2898-AD",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/rstcAnBeCkxNQzNp3YXrF6IP1tW-200x300.jpg",
+                "src": "https://mega.nz/embed/vd1RgTDB#E7NyoASfgVsN_xgOF5sHr-m9fds2_CWmiR2Lz3EtxMQ"
+            },
+            {
+                "title": "Karamsutra",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/akxdNCJQ3wh0bRLRl2p7VaICRXe-200x300.jpg",
+                "src": "https://mega.nz/embed/7xBUCabJ#PWGNIGJ3RXobPShScADer0BSZxlnUxz5lTju51zGER8"
+            },
+            {
+                "title": "Taandob",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/iplMLlXU1BgmTz4xviILTOlECYL-200x300.jpg",
+                "src": "https://mega.nz/embed/Z7t0SS7T#xDdr1dNg3_fR9hLJl4cCF8Q_ynECsbUoDlC49mVGNfs"
+            },
+            {
+                "title": "Six Each",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/mSUD3y15nNurCWZv2DyJwalWo2Z-200x300.jpg",
+                "src": "https://mega.nz/embed/MukDjIIS#9aOxbVCc03L3ojL2wtPwB63JRjPHvzJBajOHiZZtgAk"
+            },
+            {
+                "title": "Gangubai Kathiawadi",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/wHPEKlzg7CaJFCjWlMdZKpCRIDl-200x300.jpg",
+                "src": "https://mega.nz/embed/1us2mJCL#VIaEF2yi97qMeoT4jitFzqI2_KqIYtC-mRC2EIdyGsw"
+            },
+            {
+                "title": "Maaman",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/a0BsRj9qQu8L2arBAHcbbfrVrB7-200x300.jpg",
+                "src": "https://mega.nz/embed/9rVlTQCb#W4MNKjENxN6-R0SKWuO_LzGcLwSf_ETIQd5W48rRifw"
+            },
+            {
+                "title": "Baida",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/op8Edzg2xHeGiprxJDFUt1OdJfh-200x300.jpg",
+                "src": "https://mega.nz/embed/F68h0R7T#9faE21SqegnK0bExk6Kojemw3EfUr8p8MK1UytI5yDU"
+            },
+            {
+                "title": "Kaliyugam",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/hRKMtcIFzJyi59PtULiKQT4vPoA-200x300.jpg",
+                "src": "https://mega.nz/embed/vF8ijKaJ#C4LvYwlLrK6qGhbG5ZHeHk1hXTwnJhTzJ9Fp_VQPQ3A"
+            },
+            {
+                "title": "Detective Sherdil",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/gqLrdGer0xvG5ezas7Qe3alqMzV-200x300.jpg",
+                "src": "https://mega.nz/embed/fQU2TS4b#Kth5oFw96NN7_YHM_g6BaHHSWzp-zGd2fSABNVk0oXE"
+            },
+            {
+                "title": "Ghatikachalam",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/rjxyLloFbnjCHPm3XHBs6SZx3SA-225x300.jpg",
+                "src": "https://mega.nz/embed/b0gB0CqZ#34yfwpOwR0AHfvjm4zEks2yl7IwBZKhuMRNMDduc2ms"
+            },
+            {
+                "title": "The Verdict",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/zDf6wYW85LUQiHFMQJe5wGJuc93-200x300.jpg",
+                "src": "https://mega.nz/embed/jkBTXQzb#K8nMvufOg9jgtDfbHyCdLse672-Pkq8V8TgW5FAojnE"
+            },
+            {
+                "title": "Krack",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/jWzsCbUVeMZy286wNEhhYN3iDSO-200x300.jpg",
+                "src": "https://mega.nz/embed/hUckWQAK#KVSnmAyFLxROTsdIIndZklgtJ9xRc_158LmWT_AIUH4"
+            },
+            {
+                "title": "Jai Gangaajal",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/txveHYPSMXdhUB8sGWGSJhtV6Yb-200x300.jpg",
+                "src": "https://mega.nz/embed/HdlBjSZA#44Dg2tnUabHVnR4PC90Wk0OTIWJ_8pycVpgOZRxm-34"
+            },
+            {
+                "title": "23 (Iravai Moodu)",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/sIULuvuzbf54Fm1U5ckkEbK1Vai-225x300.jpg",
+                "src": "https://mega.nz/embed/SIUBzI7D#ZaT_5SbHtlQj1z5-0iFMBFhqksRy4dQ_BHN9q-hMOfo"
+            },
+            {
+                "title": "AK vs AK",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/4ULEEvH0hDYnbWN3nClrb88sYCF-200x300.jpg",
+                "src": "https://mega.nz/embed/QJExAQzT#WMCZgZFvvfaDjSRzdJQQ4uKR3tvYmxYE3PoSdGihiEI"
+            },
+            {
+                "title": "Sikandar Ka Muqaddar",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/eWUh4rgxtgypgnOa6uGMnUt01ux-200x300.jpg",
+                "src": "https://mega.nz/embed/TYl0wJjD#FP7hZmf1xhJFh5_lePbDDIi7sjJ_xqRevCYvchccYyA"
+            },
+            {
+                "title": "100% Love",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/xDuAT2K7kcN2kM9BP9lwwNqNWCD-200x300.jpg",
+                "src": "https://mega.nz/embed/MhJ3yB7I#3XkLJdNYpUH_YIjCCGM-ePOQwZOASwCAq8O9GVfAGPA"
+            },
+            {
+                "title": "Hindi Medium",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/08/2v0nQd3kYBV0iPNCVHiaLWGb1hg-200x300.jpg",
+                "src": "https://mega.nz/embed/T7QSzB5R#6whukILXSpz8TG8RQ5wRQbIeogwcEf57_WKV2QxdXzw"
+            },
+            {
+                "title": "နောက်ဆုံး myanmar subtitle",
+                "thumb": "https://i.ytimg.com/vi/xEywlW7tXdU/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCfsIYs0rzCfYcHlUd_XG86UWGGrA",
+                "src": "https://www.youtube.com/embed/xEywlW7tXdU?list=PLVjQMDLNv0p79sCztpyFv2g8N9keMq6wi"
+            },
+            {
+                "title": "ပန့်လူငယ်",
+                "thumb": "https://i.ytimg.com/vi/Jj-uLvH2br0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAq9jhfpeHHVBFEhzlUGqhMfP1g2A",
+                "src": "https://www.youtube.com/embed/Jj-uLvH2br0?list=PLVjQMDLNv0p79sCztpyFv2g8N9keMq6wi"
+            },
+            {
+                "title": "Ancestral World (2020)",
+                "thumb": "https://i.ytimg.com/vi/ZGMMJXcxvCI/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBjhnFVOqG_OTMPGyVua-eSwJ5ijQ",
+                "src": "https://www.youtube.com/embed/ZGMMJXcxvCI?list=PLVjQMDLNv0p79sCztpyFv2g8N9keMq6wi"
+            }
+        ],
+        "drama": [
+            {
+                "title": "About Family (Korea)",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/gGHrBhwk4KpWSykvdVwMfmP2C7b-200x300.jpg",
+                "src": "https://mega.nz/embed/nBU0XJ6Z#AGQW0L8rAl8ldfOj72kNoxiLzvmkcdTPBolrnAHkXV8"
+            },
+            {
+                "title": "The Whole Truth (Thriller/Drama)",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/02/iL3Bx4YOqYdAMlx4czLyygA09MC-200x300.jpg",
+                "src": "https://mega.nz/embed/zRd1GAbR#TvVodEc8Xsv6m4PGjvG_DMMiQTI5s9HSxyYwRSetfJA"
+            },
+            {
+                "title": "Blind",
+                "thumb": "https://mmsubmovie.com/wp-content/uploads/2025/09/mAfgDfAXCXcj5lPR5DUeezFrTGA-200x300.jpg",
+                "src": "https://mega.nz/embed/eCoHFKQB#7kC2_-RcqJcz_WEdgrhQFBJcuudNrU98jkn8qyME8ps"
+            }
+        ],
+        "cartoon": [
+            {
+                "title": "ဘိုဘို 2D ကာတွန်းပေါင်းချုပ်",
+                "thumb": "https://i.ytimg.com/vi/muywTuxWjVQ/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB0QXeU9hdQzYtNlGxn9jkf_kv-bg",
+                "src": "https://www.youtube.com/embed/muywTuxWjVQ"
+            },
+            {
+                "title": "Big foot family",
+                "thumb": "https://i.ytimg.com/an_webp/xd7LC9u8sK4/mqdefault_6s.webp?du=3000&sqp=CMCMp8kG&rs=AOn4CLDuKXmcDPtORE9gxg1I8S_WUiKpTg",
+                "src": "https://www.youtube.com/embed/xd7LC9u8sK4"
+            },
+            {
+                "title": "(ချန်အန်းသမိုင်း၏ အာနာစက်) တရုတ်3D",
+                "thumb": "data:image/jpeg;base64,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",
+                "src": "https://www.youtube.com/embed/JuHBtW29WAU"
+            },   
+            {
+                "title": "cartoon movie",
+                "thumb": "https://i.ytimg.com/an_webp/CMrDntkiGSY/mqdefault_6s.webp?du=3000&sqp=CPyEp8kG&rs=AOn4CLBAXdQLBiIvnNZIWTfwJ6-YkZhO7Q",
+                "src": "https://www.youtube.com/embed/CMrDntkiGSY"
+            },
+            {
+                "title": "Tom and Jerry",
+                "thumb": "https://i.ytimg.com/an_webp/xBxNTqO6OU0/mqdefault_6s.webp?du=3000&sqp=CKydp8kG&rs=AOn4CLDYWILhGTHB38jFi6HyDolCW6x4Rw",
+                "src": "https://www.youtube.com/embed/xBxNTqO6OU0"
+            },   
+            {
+                "title": "Tom and Jerry",
+                "thumb": "https://i.ytimg.com/an_webp/PdYuDMdED1E/mqdefault_6s.webp?du=3000&sqp=CMv2pskG&rs=AOn4CLDKQcLeQWmLuQlWT_96EO8BQtdqNw",
+                "src": "https://www.youtube.com/embed/PdYuDMdED1E"
+            },
+            {
+                "title": "TOM and JERRY 2 Hours",
+                "thumb": "https://i.ytimg.com/an_webp/mu54Rm8ICSQ/mqdefault_6s.webp?du=3000&sqp=CPCMp8kG&rs=AOn4CLC_y-B_b5Qqwk0xSpHUJJBsOLyLrg",
+                "src": "https://www.youtube.com/embed/mu54Rm8ICSQ"
+            },   
+            {
+                "title": "Masha and the Bear 2025",
+                "thumb": "https://i.ytimg.com/an_webp/wvI6rQl5w0g/mqdefault_6s.webp?du=3000&sqp=COj4pskG&rs=AOn4CLDO4v5PPkjyHQB4pStxhqyDoVZ8dQ",
+                "src": "https://www.youtube.com/embed/wvI6rQl5w0g"
+            }
+            
+        ],
+        "romance": [
+            {
+                "title": "The Notebook - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/BjJcYdEOI0k/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/BjJcYdEOI0k?autoplay=1"
+            },
+            {
+                "title": "Me Before You - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/Eh993__rOxA/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/Eh993__rOxA?autoplay=1"
+            },
+            {
+                "title": "The Fault in Our Stars - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/9ItBvH5J6ss/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/9ItBvH5J6ss?autoplay=1"
+            },
+            {
+                "title": "La La Land - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/0pdqf4P9MB8/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/0pdqf4P9MB8?autoplay=1"
+            }
+        ],
+        "myanmar": [
+            
+            {
+                "title": "မဟူရာရုပ်ရှင်ရုံ (နေတိုး)",
+                "thumb": "https://i.ytimg.com/vi/IdeH-gD3jHw/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDydZr-LqUWkYYeBsERvvNLeR2vzg",
+                "src": "https://www.youtube.com/embed/IdeH-gD3jHw"
+            },
+            {
+                "title": "မိုးမခဓားသမား(နေထူးနိုင်)",
+                "thumb": "https://i.ytimg.com/vi/hidxwHpKAOI/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCfFCSGtlsbq8amZnpz8PavHzWS9A",
+                "src": "https://www.youtube.com/embed/hidxwHpKAOI?list=PL3IBGpSJCCYDkgEaFgfBawBzaqFcQstW-"
+            },
+            {
+                "title": "ရှိုးမထုတ်တဲ့ဖိုးရှုပ်(နေထူးနိုင်)",
+                "thumb": "https://i.ytimg.com/vi/AXG-1PMRUow/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAw0f0JPuEeE9vq9ImtqLYu54Toyg",
+                "src": "https://www.youtube.com/embed/AXG-1PMRUow?list=PL3IBGpSJCCYDkgEaFgfBawBzaqFcQstW-"
+            },
+            {
+                "title": "ဘမောင်ကိုဘောင်မခတ်နဲ့(နေထူးနိုင်)",
+                "thumb": "https://i.ytimg.com/vi/iMEkp-ygo3M/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLD7cdIvhRZSBv_3wxWUr2cLl_HbCA",
+                "src": "https://www.youtube.com/embed/iMEkp-ygo3M?list=PL3IBGpSJCCYDkgEaFgfBawBzaqFcQstW-"
+            },
+            {
+                "title": "ဗိုလ်တကာ့ဗိုလ်(နေထူးနိုင်)",
+                "thumb": "https://i.ytimg.com/vi/QIU_qczgluk/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAaG5Jqsww86KEQsW1xoBehy2W6NQ",
+                "src": "https://www.youtube.com/embed/QIU_qczgluk?list=PL3IBGpSJCCYDkgEaFgfBawBzaqFcQstW-"
+            },
+            {
+                "title": "ဗန်ဒိုစံညိုနှင့်ရှောင်လင်သိုင်:ရာဇာ(နေထူးနိုင်)",
+                "thumb": "https://i.ytimg.com/vi/LsCTgD-ojOM/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLAi69jMJ1UTboeMf0nSETkQ2_xWsw",
+                "src": "https://www.youtube.com/embed/LsCTgD-ojOM?list=PL3IBGpSJCCYDkgEaFgfBawBzaqFcQstW-"
+            },
+            {
+                "title": "မဟာဘီလူး(နေထူးနိုင်)",
+                "thumb": "https://i.ytimg.com/vi/3MJLqDcsfRU/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDrGALNJBOnAFydp7GlHYnpAt2E1Q",
+                "src": "https://www.youtube.com/embed/3MJLqDcsfRU?list=PL3IBGpSJCCYDkgEaFgfBawBzaqFcQstW-"
+            },
+            {
+                "title": "ဒဏ်ရာ(နေထူးနိုင်)",
+                "thumb": "https://i.ytimg.com/vi/pmUyU6LwizE/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCFeMzBBzqWFeoGUiljzPYgWeIiTA",
+                "src": "https://www.youtube.com/embed/pmUyU6LwizE?list=PL3IBGpSJCCYDkgEaFgfBawBzaqFcQstW-"
+            },
+            {
+                "title": "မိုးပေါ်ခုန်တက်ကလိုက်ချင်တယ်(နေတိုး)",
+                "thumb": "https://i.ytimg.com/vi/ghtn30mz8jY/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDJz5yFH53r_O0kdFYhKe-9WHlWkw",
+                "src": "https://www.youtube.com/embed/ghtn30mz8jY?list=PLkQrCHWyqYFlxbGMVqwfl4opvbkATpCu7"
+            },
+            {
+                "title": "ဒီကောင်ဘယ်သူတုန်း(နေတိုး)",
+                "thumb": "https://i.ytimg.com/vi/e4oetvhOSgI/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB68mt_aWu4C02ZaW8KFDXyoW7Gsg",
+                "src": "https://www.youtube.com/embed/e4oetvhOSgI?list=PLkQrCHWyqYFlxbGMVqwfl4opvbkATpCu7"
+            },
+            {
+                "title": "တာတေကြီး(နေတိုး)",
+                "thumb": "https://i.ytimg.com/vi/3fQUxZgFD9U/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBMe2zmuLrJsKHhbVkZkw-AOKVweQ",
+                "src": "https://www.youtube.com/embed/3fQUxZgFD9U?list=PLkQrCHWyqYFlxbGMVqwfl4opvbkATpCu7"
+            }
+        ],
+        "trending": [
+            {
+                "title": "Avatar - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/5PSNL1qE6VY/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/5PSNL1qE6VY?autoplay=1"
+            },
+            {
+                "title": "Avengers Endgame - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/TcMBFSGVi1c/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/TcMBFSGVi1c?autoplay=1"
+            },
+            {
+                "title": "Spider-Man No Way Home - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/JfVOs4VSpmA/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/JfVOs4VSpmA?autoplay=1"
+            },
+            {
+                "title": "Black Panther - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/xjDjIWPwcPU/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/xjDjIWPwcPU?autoplay=1"
+            },
+            {
+                "title": "The Batman - မြန်မာစာတန်းထိုး (ဇာတ်ကားအပြည့်)",
+                "thumb": "https://img.youtube.com/vi/mqqft2x_Aa4/hqdefault.jpg",
+                "src": "https://www.youtube.com/embed/mqqft2x_Aa4?autoplay=1"
+            }
+        ]
+    },
+    "translations": {
+        "english": {
+            "title": "WY MovieBox",
+            "selectMovie": "Select a Movie",
+            "nowPlaying": "Play Now",
+            "noContent": "No Content Available",
+            "trendingTitle": "Trending Movies",
+            "favoritesTitle": "My Favorites",
+            "noFavorites": "No favorite movies added yet.",
+            "profileTitle": "User Profile",
+            "settingsTitle": "Settings",
+            "languageLabel": "Language:",
+            "themeLabel": "Theme:",
+            "resetData": "Reset App Data",
+            "adultContent": "Adult Content (18+)",
+            "langMyanmar": "Myanmar",
+            "langEnglish": "English",
+            "navHome": "Home",
+            "navTrending": "Trending",
+            "navFavorites": "Favorites",
+            "navModApp": "Mod App",
+            "navProfile": "Profile",
+            "action": "Action",
+            "drama": "Drama",
+            "cartoon": "Cartoon",
+            "romance": "Romance",
+            "myanmar": "Myanmar"
+        },
+        "myanmar": {
+            "title": "WY ရုပ်ရှင်သေတ္တာ",
+            "selectMovie": "ရုပ်ရှင်ကို ရွေးချယ်ပါ",
+            "nowPlaying": "ချက်ချင်းကြည့်ပါ",
+            "noContent": "လက်ရှိ Data များ မရှိပါ",
+            "trendingTitle": "ခေတ်စားနေသော ရုပ်ရှင်များ",
+            "favoritesTitle": "အနှစ်သက်ဆုံးများ",
+            "noFavorites": "အနှစ်သက်ဆုံး ရုပ်ရှင်များ မထည့်ရသေးပါ",
+            "profileTitle": "အသုံးပြုသူအချက်အလက်",
+            "settingsTitle": "ချိန်ညှိချက်များ",
+            "languageLabel": "ဘာသာစကား:",
+            "themeLabel": "မျက်နှာပြင်ပုံစံ:",
+            "resetData": "App Data များ ရှင်းလင်းပါ",
+            "adultContent": "လူကြီးကားများကြည့်ရန် (18+)",
+            "langMyanmar": "မြန်မာ",
+            "langEnglish": "အင်္ဂလိပ်",
+            "navHome": "မူလစာမျက်နှာ",
+            "navTrending": "ခေတ်စားနေသည်",
+            "navFavorites": "အနှစ်သက်ဆုံး",
+            "navModApp": "Mod App",
+            "navProfile": "အသုံးပြုသူ",
+            "action": "လှုပ်ရှားမှု",
+            "drama": "ဒရာမာ",
+            "cartoon": "ကာတွန်း",
+            "romance": "အချစ်",
+            "myanmar": "မြန်မာ"
+        }
+    }
+}

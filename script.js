@@ -1,5 +1,5 @@
 /**
- * WY MovieBox - Main JavaScript Logic (v5.0 - Working Auth)
+ * WY MovieBox - Main JavaScript Logic (v5.1 - Working Auth with ModApp)
  */
 
 // Global state variables
@@ -224,7 +224,7 @@ window.changeNav = function(btn) {
     }
     
     // Header/Player visibility and Layout Control
-    if (nav === 'profile' || nav === 'admin') {
+    if (nav === 'profile' || nav === 'admin' || nav === 'modapp') {
         if (menuBar) menuBar.classList.add('hidden');
         if (playerContainer) playerContainer.classList.add('hidden');
         if (currentTitleBar) currentTitleBar.classList.add('hidden'); 
@@ -274,6 +274,24 @@ window.changeNav = function(btn) {
                 btn.classList.add('bg-gray-800', 'text-white', 'hover:bg-gray-700');
             });
             displayFavorites();
+            break;
+            
+        case 'modapp': 
+            document.querySelectorAll('.menu-btn').forEach(btn => {
+                btn.classList.remove('active-category', 'active-category-blue', 'text-white', 'bg-gray-800');
+                btn.classList.add('bg-gray-800', 'text-white', 'hover:bg-gray-700');
+            });
+            
+            // ModApp opens in external browser
+            window.open(MODAPP_WEBVIEW_URL, '_blank'); 
+            
+            // Switch back to home immediately
+            const homeBtn = document.querySelector('.nav-btn[data-nav="home"]');
+            if (homeBtn) {
+                setTimeout(() => {
+                    changeNav(homeBtn);
+                }, 100);
+            }
             break;
             
         case 'admin': 
@@ -644,31 +662,3 @@ window.closeAdultWebview = function() {
         document.body.style.overflow = '';
     }
 }
-
-// -------------------------------------------------------------------------
-// 7. TESTING FUNCTION
-// -------------------------------------------------------------------------
-
-// For testing only - remove in production
-window.testLogin = function() {
-    const testUser = {
-        email: 'test@test.com',
-        name: 'Test User',
-        uid: 'test-123',
-        role: 'user'
-    };
-    localStorage.setItem('currentUser', JSON.stringify(testUser));
-    window.location.reload();
-};
-
-// Add test button for debugging
-document.addEventListener('DOMContentLoaded', () => {
-    // Check if we're in development
-    if (window.location.hostname === 'localhost' || window.location.hostname.includes('vercel')) {
-        const testBtn = document.createElement('button');
-        testBtn.textContent = 'Test Login';
-        testBtn.className = 'fixed bottom-20 right-4 bg-red-500 text-white p-2 rounded text-xs z-[1000]';
-        testBtn.onclick = testLogin;
-        document.body.appendChild(testBtn);
-    }
-});

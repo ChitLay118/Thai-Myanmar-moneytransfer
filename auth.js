@@ -3,7 +3,7 @@ import {
   createUserWithEmailAndPassword, 
   signInWithEmailAndPassword, 
   sendPasswordResetEmail,
-  signOut 
+  onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
 import { 
   collection, 
@@ -17,6 +17,50 @@ import {
 
 let isLoginMode = true;
 
+// Firebase auth state listener
+onAuthStateChanged(auth, (user) => {
+    console.log("Auth state changed:", user ? user.email : "No user");
+    if (user) {
+        // User is signed in
+        loadUserData(user.uid, user.email);
+    } else {
+        // User is signed out
+        localStorage.removeItem('currentUser');
+        showLoginScreen();
+    }
+});
+
+// Load user data from Firestore
+async function loadUserData(uid, email) {
+    try {
+        const usersRef = collection(db, 'users');
+        const q = query(usersRef, where("uid", "==", uid));
+        const querySnapshot = await getDocs(q);
+        
+        let userData = { 
+            email: email, 
+            uid: uid,
+            name: email.split('@')[0] 
+        };
+        
+        if (!querySnapshot.empty) {
+            querySnapshot.forEach((doc) => {
+                userData = { ...userData, ...doc.data() };
+            });
+        }
+        
+        localStorage.setItem('currentUser', JSON.stringify(userData));
+        console.log("User data saved to localStorage:", userData.email);
+        
+        // Reload page to show main app
+        window.location.reload();
+        
+    } catch (error) {
+        console.error("Error loading user data:", error);
+        alert("User data ဖတ်ရာတွင် အမှားဖြစ်နေပါသည်။");
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const usernameField = document.getElementById('username-field');
     const usernameInput = document.getElementById('username');
@@ -25,6 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const togglePrompt = document.getElementById('toggle-prompt');
     const toggleLink = document.getElementById('toggle-link');
     const authForm = document.getElementById('auth-form');
+
+    // Check if already logged in
+    const currentUser = localStorage.getItem('currentUser');
+    if (currentUser) {
+        console.log("Already logged in, redirecting to main app...");
+        window.location.reload();
+        return;
+    }
 
     // Update UI based on mode
     const updateUI = () => {
@@ -60,38 +112,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('password').value;
         const username = document.getElementById('username').value;
         
+        // Show loading state
+        submitButton.disabled = true;
+        submitButton.textContent = 'လုပ်ဆောင်နေသည်...';
+        
         try {
             if (isLoginMode) {
                 // Login
+                console.log("Attempting login for:", email);
                 const userCredential = await signInWithEmailAndPassword(auth, email, password);
                 const user = userCredential.user;
-                
                 console.log("Login successful:", user.email);
                 
-                // Get user data from Firestore
-                const usersRef = collection(db, 'users');
-                const q = query(usersRef, where("uid", "==", user.uid));
-                const querySnapshot = await getDocs(q);
-                
-                let userData = { 
-                    email: user.email, 
-                    uid: user.uid,
-                    name: email.split('@')[0] 
-                };
-                
-                if (!querySnapshot.empty) {
-                    querySnapshot.forEach((doc) => {
-                        userData = { ...userData, ...doc.data() };
-                    });
-                }
-                
-                localStorage.setItem('currentUser', JSON.stringify(userData));
-                console.log("User data saved to localStorage");
-                
-                // Reload to show main app
-                setTimeout(() => {
-                    window.location.reload();
-                }, 1000);
+                // The auth state change listener will handle the rest
                 
             } else {
                 // Sign up
@@ -101,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 console.log("Sign up successful:", user.uid);
                 
-                // Save user data to Firestore using setDoc with uid as document ID
+                // Save user data to Firestore
                 const userDocRef = doc(db, 'users', user.uid);
                 await setDoc(userDocRef, {
                     uid: user.uid,
@@ -113,25 +146,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 console.log("User data saved to Firestore");
                 
-                const userData = {
-                    email: email,
-                    name: username || email.split('@')[0],
-                    uid: user.uid,
-                    role: email === 'yan260702@gmail.com' ? 'admin' : 'user'
-                };
-                
-                localStorage.setItem('currentUser', JSON.stringify(userData));
+                // The auth state change listener will handle the rest
                 
                 // Show success message
                 alert("အကောင့်ဖွင့်ခြင်း အောင်မြင်ပါသည်!");
-                
-                // Reload after 1 second
-                setTimeout(() => {
-                    window.location.reload();
-                }, 1000);
             }
         } catch (error) {
             console.error("Auth error:", error);
+            
+            // Reset button state
+            submitButton.disabled = false;
+            submitButton.textContent = isLoginMode ? 'ဝင်ရောက်ပါ' : 'အကောင့်ဖွင့်ပါ';
             
             // Better error messages in Burmese
             let errorMessage = "";
@@ -184,4 +209,15 @@ window.resetPassword = async function() {
             alert(`အမှား: ${error.message}`);
         }
     }
+};
+
+// Show/hide functions for script.js to use
+window.showLoginScreen = function() {
+    document.getElementById('login-screen').classList.remove('hidden');
+    document.getElementById('main-app').classList.add('hidden');
+};
+
+window.showMainApp = function() {
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('main-app').classList.remove('hidden');
 };

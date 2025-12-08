@@ -26,12 +26,15 @@ import { signOut } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth
 // Check authentication status
 function checkAuth() {
     const user = JSON.parse(localStorage.getItem('currentUser'));
-    console.log("Checking auth, user in localStorage:", user);
+    console.log("Checking auth, user in localStorage:", user ? user.email : "No user");
     
     if (user && user.uid) {
         currentUser = user;
         console.log("User found, showing main app");
-        showMainApp();
+        
+        // Show main app
+        document.getElementById('login-screen').classList.add('hidden');
+        document.getElementById('main-app').classList.remove('hidden');
         
         // Check if admin
         if (user.email === 'yan260702@gmail.com' || user.role === 'admin') {
@@ -41,29 +44,39 @@ function checkAuth() {
                 console.log("Admin button shown");
             }
         }
+        
+        // Initialize app
+        initializeApp();
     } else {
         console.log("No user found, showing login screen");
-        showLoginScreen();
+        // Login screen is already shown by auth.js
     }
 }
 
-function showLoginScreen() {
+// Remove or update the tempLogin function
+window.tempLogin = function() {
+    // Clear any existing login
+    localStorage.removeItem('currentUser');
+    
+    // Show login screen
     document.getElementById('login-screen').classList.remove('hidden');
     document.getElementById('main-app').classList.add('hidden');
-}
-
-function showMainApp() {
-    document.getElementById('login-screen').classList.add('hidden');
-    document.getElementById('main-app').classList.remove('hidden');
     
-    // Update user info in header if needed
-    if (currentUser) {
-        const userEmail = currentUser.email || 'User';
-        console.log("Main app shown for user:", userEmail);
+    // Auto-fill test credentials
+    document.getElementById('email').value = 'test@test.com';
+    document.getElementById('password').value = '123456';
+    
+    // Switch to login mode if not already
+    if (window.toggleToLoginMode) {
+        window.toggleToLoginMode();
     }
-    
-    initializeApp();
-}
+};
+
+// Add this function to help testing
+window.toggleToLoginMode = function() {
+    // This will be called from auth.js
+    console.log("Switching to login mode");
+};
 
 // Logout function
 window.logout = async function() {

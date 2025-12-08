@@ -3,7 +3,8 @@ import {
   createUserWithEmailAndPassword, 
   signInWithEmailAndPassword, 
   sendPasswordResetEmail,
-  onAuthStateChanged
+  onAuthStateChanged,
+  signOut
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
 import { 
   collection, 
@@ -17,51 +18,55 @@ import {
 
 let isLoginMode = true;
 
-// Firebase auth state listener
-onAuthStateChanged(auth, (user) => {
-    console.log("Auth state changed:", user ? user.email : "No user");
-    if (user) {
-        // User is signed in
-        loadUserData(user.uid, user.email);
+// Simple alert function
+function showAlert(message, type = 'error') {
+    const alertDiv = document.getElementById('simple-alert');
+    const alertMessage = document.getElementById('alert-message');
+    
+    if (alertDiv && alertMessage) {
+        alertMessage.textContent = message;
+        alertDiv.className = `fixed top-4 right-4 ${type === 'error' ? 'bg-red-600' : 'bg-green-600'} text-white p-4 rounded-lg shadow-lg z-[110] max-w-sm`;
+        alertDiv.classList.remove('hidden');
+        
+        setTimeout(() => {
+            alertDiv.classList.add('hidden');
+        }, 5000);
     } else {
-        // User is signed out
-        localStorage.removeItem('currentUser');
-        showLoginScreen();
-    }
-});
-
-// Load user data from Firestore
-async function loadUserData(uid, email) {
-    try {
-        const usersRef = collection(db, 'users');
-        const q = query(usersRef, where("uid", "==", uid));
-        const querySnapshot = await getDocs(q);
-        
-        let userData = { 
-            email: email, 
-            uid: uid,
-            name: email.split('@')[0] 
-        };
-        
-        if (!querySnapshot.empty) {
-            querySnapshot.forEach((doc) => {
-                userData = { ...userData, ...doc.data() };
-            });
-        }
-        
-        localStorage.setItem('currentUser', JSON.stringify(userData));
-        console.log("User data saved to localStorage:", userData.email);
-        
-        // Reload page to show main app
-        window.location.reload();
-        
-    } catch (error) {
-        console.error("Error loading user data:", error);
-        alert("User data ဖတ်ရာတွင် အမှားဖြစ်နေပါသည်။");
+        alert(message);
     }
 }
 
+// Check auth state on page load
 document.addEventListener('DOMContentLoaded', () => {
+    console.log("Auth script loaded");
+    
+    // Check if user is already logged in
+    const currentUser = localStorage.getItem('currentUser');
+    if (currentUser) {
+        console.log("Already logged in, showing main app");
+        const userData = JSON.parse(currentUser);
+        showMainApp(userData);
+        return;
+    }
+    
+    // Set up auth state listener
+    onAuthStateChanged(auth, (user) => {
+        console.log("Auth state changed:", user ? user.email : "No user");
+        if (user) {
+            // User just logged in
+            loadUserData(user);
+        } else {
+            // User logged out
+            localStorage.removeItem('currentUser');
+            showLoginScreen();
+        }
+    });
+    
+    initLoginForm();
+});
+
+// Initialize login form
+function initLoginForm() {
     const usernameField = document.getElementById('username-field');
     const usernameInput = document.getElementById('username');
     const formTitle = document.getElementById('form-title');
@@ -69,14 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const togglePrompt = document.getElementById('toggle-prompt');
     const toggleLink = document.getElementById('toggle-link');
     const authForm = document.getElementById('auth-form');
-
-    // Check if already logged in
-    const currentUser = localStorage.getItem('currentUser');
-    if (currentUser) {
-        console.log("Already logged in, redirecting to main app...");
-        window.location.reload();
-        return;
-    }
 
     // Update UI based on mode
     const updateUI = () => {
@@ -108,9 +105,19 @@ document.addEventListener('DOMContentLoaded', () => {
     authForm.addEventListener('submit', async (event) => {
         event.preventDefault();
         
-        const email = document.getElementById('email').value;
+        const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value;
-        const username = document.getElementById('username').value;
+        const username = document.getElementById('username').value.trim();
+        
+        if (!email || !password) {
+            showAlert("ကျေးဇူးပြု၍ အီးမေးလ်နှင့် စကားဝှက်ထည့်ပါ။");
+            return;
+        }
+        
+        if (!isLoginMode && !username) {
+            showAlert("ကျေးဇူးပြု၍ အမည်ထည့်ပါ။");
+            return;
+        }
         
         // Show loading state
         submitButton.disabled = true;
@@ -121,10 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Login
                 console.log("Attempting login for:", email);
                 const userCredential = await signInWithEmailAndPassword(auth, email, password);
-                const user = userCredential.user;
-                console.log("Login successful:", user.email);
-                
-                // The auth state change listener will handle the rest
+                console.log("Login successful");
+                // onAuthStateChanged will handle the rest
                 
             } else {
                 // Sign up
@@ -145,11 +150,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 
                 console.log("User data saved to Firestore");
+                showAlert("အကောင့်ဖွင့်ခြင်း အောင်မြင်ပါသည်!", "success");
                 
-                // The auth state change listener will handle the rest
+                // Switch to login mode
+                isLoginMode = true;
+                updateUI();
                 
-                // Show success message
-                alert("အကောင့်ဖွင့်ခြင်း အောင်မြင်ပါသည်!");
+                // Clear form
+                document.getElementById('email').value = '';
+                document.getElementById('password').value = '';
+                document.getElementById('username').value = '';
             }
         } catch (error) {
             console.error("Auth error:", error);
@@ -163,7 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
             switch (error.code) {
                 case 'auth/email-already-in-use':
                     errorMessage = "ဤအီးမေးလ်ဖြင့် အကောင့်ရှိပြီးသားဖြစ်သည်။ ဝင်ရောက်ပါ။";
-                    // Switch to login mode
                     isLoginMode = true;
                     updateUI();
                     break;
@@ -191,12 +200,76 @@ document.addEventListener('DOMContentLoaded', () => {
                     errorMessage = `အမှားတစ်ခုဖြစ်ပွားခဲ့သည်: ${error.message}`;
             }
             
-            alert(errorMessage);
+            showAlert(errorMessage);
         }
     });
 
     updateUI();
-});
+}
+
+// Load user data from Firestore
+async function loadUserData(user) {
+    try {
+        const usersRef = collection(db, 'users');
+        const q = query(usersRef, where("uid", "==", user.uid));
+        const querySnapshot = await getDocs(q);
+        
+        let userData = { 
+            email: user.email, 
+            uid: user.uid,
+            name: user.email.split('@')[0] 
+        };
+        
+        if (!querySnapshot.empty) {
+            querySnapshot.forEach((doc) => {
+                userData = { ...userData, ...doc.data() };
+            });
+        }
+        
+        localStorage.setItem('currentUser', JSON.stringify(userData));
+        console.log("User data saved to localStorage:", userData.email);
+        
+        showMainApp(userData);
+        
+    } catch (error) {
+        console.error("Error loading user data:", error);
+        showAlert("User data ဖတ်ရာတွင် အမှားဖြစ်နေပါသည်။");
+    }
+}
+
+// Show/hide functions
+window.showLoginScreen = function() {
+    const loginScreen = document.getElementById('login-screen');
+    const mainApp = document.getElementById('main-app');
+    
+    if (loginScreen) loginScreen.classList.remove('hidden');
+    if (mainApp) mainApp.classList.add('hidden');
+};
+
+window.showMainApp = function(userData) {
+    const loginScreen = document.getElementById('login-screen');
+    const mainApp = document.getElementById('main-app');
+    
+    if (loginScreen) loginScreen.classList.add('hidden');
+    if (mainApp) mainApp.classList.remove('hidden');
+    
+    // Store user data globally
+    window.currentUser = userData;
+    
+    // Check if admin
+    if (userData.email === 'yan260702@gmail.com' || userData.role === 'admin') {
+        const adminBtn = document.getElementById('admin-btn');
+        if (adminBtn) {
+            adminBtn.classList.remove('hidden');
+            console.log("Admin button shown");
+        }
+    }
+    
+    // Initialize main app
+    if (window.initializeApp) {
+        window.initializeApp();
+    }
+};
 
 // Password reset
 window.resetPassword = async function() {
@@ -204,20 +277,23 @@ window.resetPassword = async function() {
     if (email) {
         try {
             await sendPasswordResetEmail(auth, email);
-            alert("စကားဝှက်ပြန်လည်သတ်မှတ်ရန် အီးမေးလ်ပို့ပြီးပါပြီ။");
+            showAlert("စကားဝှက်ပြန်လည်သတ်မှတ်ရန် အီးမေးလ်ပို့ပြီးပါပြီ။", "success");
         } catch (error) {
-            alert(`အမှား: ${error.message}`);
+            showAlert(`အမှား: ${error.message}`);
         }
     }
 };
 
-// Show/hide functions for script.js to use
-window.showLoginScreen = function() {
-    document.getElementById('login-screen').classList.remove('hidden');
-    document.getElementById('main-app').classList.add('hidden');
-};
-
-window.showMainApp = function() {
-    document.getElementById('login-screen').classList.add('hidden');
-    document.getElementById('main-app').classList.remove('hidden');
+// Logout function
+window.logout = async function() {
+    try {
+        await signOut(auth);
+        localStorage.removeItem('currentUser');
+        window.currentUser = null;
+        showLoginScreen();
+    } catch (error) {
+        console.error("Logout error:", error);
+        localStorage.removeItem('currentUser');
+        showLoginScreen();
+    }
 };

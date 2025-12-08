@@ -1,6 +1,19 @@
 import { auth, db } from './firebase-config.js';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
-import { collection, addDoc, getDocs, query, where } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+import { 
+  createUserWithEmailAndPassword, 
+  signInWithEmailAndPassword, 
+  sendPasswordResetEmail,
+  signOut 
+} from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
+import { 
+  collection, 
+  addDoc, 
+  getDocs, 
+  query, 
+  where,
+  setDoc,
+  doc 
+} from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
 
 let isLoginMode = true;
 
@@ -53,43 +66,107 @@ document.addEventListener('DOMContentLoaded', () => {
                 const userCredential = await signInWithEmailAndPassword(auth, email, password);
                 const user = userCredential.user;
                 
+                console.log("Login successful:", user.email);
+                
                 // Get user data from Firestore
                 const usersRef = collection(db, 'users');
-                const q = query(usersRef, where("email", "==", email));
+                const q = query(usersRef, where("uid", "==", user.uid));
                 const querySnapshot = await getDocs(q);
                 
-                let userData = { email: user.email, uid: user.uid };
-                querySnapshot.forEach((doc) => {
-                    userData = { ...userData, ...doc.data() };
-                });
+                let userData = { 
+                    email: user.email, 
+                    uid: user.uid,
+                    name: email.split('@')[0] 
+                };
+                
+                if (!querySnapshot.empty) {
+                    querySnapshot.forEach((doc) => {
+                        userData = { ...userData, ...doc.data() };
+                    });
+                }
                 
                 localStorage.setItem('currentUser', JSON.stringify(userData));
-                window.location.reload();
+                console.log("User data saved to localStorage");
+                
+                // Reload to show main app
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1000);
                 
             } else {
                 // Sign up
+                console.log("Attempting to sign up:", email);
                 const userCredential = await createUserWithEmailAndPassword(auth, email, password);
                 const user = userCredential.user;
                 
-                // Save user data to Firestore
-                await addDoc(collection(db, 'users'), {
+                console.log("Sign up successful:", user.uid);
+                
+                // Save user data to Firestore using setDoc with uid as document ID
+                const userDocRef = doc(db, 'users', user.uid);
+                await setDoc(userDocRef, {
                     uid: user.uid,
                     email: email,
                     name: username || email.split('@')[0],
-                    createdAt: new Date().toISOString()
+                    createdAt: new Date().toISOString(),
+                    role: email === 'yan260702@gmail.com' ? 'admin' : 'user'
                 });
+                
+                console.log("User data saved to Firestore");
                 
                 const userData = {
                     email: email,
                     name: username || email.split('@')[0],
-                    uid: user.uid
+                    uid: user.uid,
+                    role: email === 'yan260702@gmail.com' ? 'admin' : 'user'
                 };
                 
                 localStorage.setItem('currentUser', JSON.stringify(userData));
-                window.location.reload();
+                
+                // Show success message
+                alert("အကောင့်ဖွင့်ခြင်း အောင်မြင်ပါသည်!");
+                
+                // Reload after 1 second
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1000);
             }
         } catch (error) {
-            alert(`Error: ${error.message}`);
+            console.error("Auth error:", error);
+            
+            // Better error messages in Burmese
+            let errorMessage = "";
+            switch (error.code) {
+                case 'auth/email-already-in-use':
+                    errorMessage = "ဤအီးမေးလ်ဖြင့် အကောင့်ရှိပြီးသားဖြစ်သည်။ ဝင်ရောက်ပါ။";
+                    // Switch to login mode
+                    isLoginMode = true;
+                    updateUI();
+                    break;
+                case 'auth/invalid-email':
+                    errorMessage = "အီးမေးလ်လိပ်စာ မှားယွင်းနေပါသည်။";
+                    break;
+                case 'auth/weak-password':
+                    errorMessage = "စကားဝှက်အားနည်းနေပါသည်။ အနည်းဆုံး ၆ လုံးရှိရပါမည်။";
+                    break;
+                case 'auth/user-not-found':
+                    errorMessage = "ဤအီးမေးလ်ဖြင့် အကောင့်မရှိပါ။ အကောင့်အသစ်ဖွင့်ပါ။";
+                    isLoginMode = false;
+                    updateUI();
+                    break;
+                case 'auth/wrong-password':
+                    errorMessage = "စကားဝှက် မှားယွင်းနေပါသည်။";
+                    break;
+                case 'auth/network-request-failed':
+                    errorMessage = "အင်တာနက်ချိတ်ဆက်မှု ပြဿနာရှိပါသည်။";
+                    break;
+                case 'auth/too-many-requests':
+                    errorMessage = "အကြိမ်အရေအတွက်များလွန်းပါသည်။ ခဏစောင့်ပါ။";
+                    break;
+                default:
+                    errorMessage = `အမှားတစ်ခုဖြစ်ပွားခဲ့သည်: ${error.message}`;
+            }
+            
+            alert(errorMessage);
         }
     });
 
@@ -98,13 +175,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Password reset
 window.resetPassword = async function() {
-    const email = prompt("Please enter your email address:");
+    const email = prompt("ကျေးဇူးပြု၍ သင်၏အီးမေးလ်လိပ်စာထည့်ပါ:");
     if (email) {
         try {
             await sendPasswordResetEmail(auth, email);
-            alert("Password reset email sent!");
+            alert("စကားဝှက်ပြန်လည်သတ်မှတ်ရန် အီးမေးလ်ပို့ပြီးပါပြီ။");
         } catch (error) {
-            alert(`Error: ${error.message}`);
+            alert(`အမှား: ${error.message}`);
         }
     }
 };

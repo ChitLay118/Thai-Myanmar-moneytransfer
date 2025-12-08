@@ -1,31 +1,36 @@
-import { db, storage } from './firebase-config.js';
-import { collection, addDoc, getDocs, updateDoc, doc, deleteDoc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
-import { ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-storage.js";
+import { db } from './firebase-config.js';
+import { collection, addDoc, getDocs, setDoc, doc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
 
 // Add video to Firebase
 window.addVideo = async function() {
-    const title = document.getElementById('video-title').value;
-    const url = document.getElementById('video-url').value;
-    const thumb = document.getElementById('video-thumb').value;
+    const title = document.getElementById('video-title').value.trim();
+    const url = document.getElementById('video-url').value.trim();
+    const thumb = document.getElementById('video-thumb').value.trim();
     const category = document.getElementById('video-category').value;
     
     if (!title || !url) {
-        alert("Please fill in title and URL");
+        alert("ကျေးဇူးပြု၍ Title နှင့် URL ထည့်ပါ");
+        return;
+    }
+    
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (!currentUser) {
+        alert("ကျေးဇူးပြု၍ အကောင့်ဝင်ပါ");
         return;
     }
     
     try {
-        // Add to Firestore
         await addDoc(collection(db, 'videos'), {
             title: title,
             src: url,
             thumb: thumb || 'https://placehold.co/300x200/1a1a1a/cccccc?text=WY',
             category: category,
-            addedBy: JSON.parse(localStorage.getItem('currentUser')).email,
-            addedAt: new Date().toISOString()
+            addedBy: currentUser.email,
+            addedAt: new Date().toISOString(),
+            uid: currentUser.uid
         });
         
-        alert("Video added successfully!");
+        alert("Video ထည့်သွင်းခြင်း အောင်မြင်ပါသည်!");
         
         // Clear inputs
         document.getElementById('video-title').value = '';
@@ -33,16 +38,23 @@ window.addVideo = async function() {
         document.getElementById('video-thumb').value = '';
         
     } catch (error) {
-        alert(`Error: ${error.message}`);
+        console.error("Error adding video:", error);
+        alert(`အမှား: ${error.message}`);
     }
 };
 
 // Add advertisement
 window.addAdvertisement = async function() {
-    const adUrl = document.getElementById('ad-url').value;
+    const adUrl = document.getElementById('ad-url').value.trim();
     
     if (!adUrl) {
-        alert("Please enter an ad URL");
+        alert("ကျေးဇူးပြု၍ URL ထည့်ပါ");
+        return;
+    }
+    
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (!currentUser) {
+        alert("ကျေးဇူးပြု၍ အကောင့်ဝင်ပါ");
         return;
     }
     
@@ -52,28 +64,30 @@ window.addAdvertisement = async function() {
         const isVideo = adUrl.match(/\.(mp4|webm|ogg|mov)$/i);
         
         if (!isImage && !isVideo) {
-            alert("Please enter a valid image or video URL");
+            alert("ကျေးဇူးပြု၍ ပုံသို့မဟုတ် ဗီဒီယို URL တစ်ခုထည့်ပါ");
             return;
         }
         
         await addDoc(collection(db, 'advertisements'), {
             url: adUrl,
             type: isImage ? 'image' : 'video',
-            addedBy: JSON.parse(localStorage.getItem('currentUser')).email,
+            addedBy: currentUser.email,
             addedAt: new Date().toISOString(),
-            active: true
+            active: true,
+            uid: currentUser.uid
         });
         
-        alert("Advertisement added successfully!");
+        alert("ကြော်ညာထည့်သွင်းခြင်း အောင်မြင်ပါသည်!");
         document.getElementById('ad-url').value = '';
         
     } catch (error) {
-        alert(`Error: ${error.message}`);
+        console.error("Error adding advertisement:", error);
+        alert(`အမှား: ${error.message}`);
     }
 };
 
 // Load user list
-async function loadUserList() {
+window.loadUserList = async function() {
     try {
         const usersRef = collection(db, 'users');
         const snapshot = await getDocs(usersRef);
@@ -86,6 +100,9 @@ async function loadUserList() {
                     <div>
                         <div class="font-medium">${user.name || user.email}</div>
                         <div class="text-sm text-gray-400">${user.email}</div>
+                        <div class="text-xs ${user.role === 'admin' ? 'text-red-400' : 'text-blue-400'}">
+                            ${user.role === 'admin' ? ' Admin' : ' User'}
+                        </div>
                     </div>
                     <div class="text-xs text-gray-500">
                         ${new Date(user.createdAt).toLocaleDateString()}
@@ -94,10 +111,16 @@ async function loadUserList() {
             `;
         });
         
-        document.getElementById('user-list').innerHTML = userListHTML || 'No users found';
+        const userListElement = document.getElementById('user-list');
+        if (userListElement) {
+            userListElement.innerHTML = userListHTML || '<div class="text-center text-gray-500">No users found</div>';
+        }
         
     } catch (error) {
         console.error("Error loading users:", error);
-        document.getElementById('user-list').innerHTML = 'Error loading users';
+        const userListElement = document.getElementById('user-list');
+        if (userListElement) {
+            userListElement.innerHTML = '<div class="text-center text-red-400">Error loading users</div>';
+        }
     }
-}
+};

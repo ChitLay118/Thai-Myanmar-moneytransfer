@@ -3,14 +3,17 @@ import { collection, getDocs, query, where, orderBy, limit } from "https://www.g
 
 // Check and show ad on app open
 document.addEventListener('DOMContentLoaded', async () => {
-    // Check if user has seen ad today
-    const lastAdDate = localStorage.getItem('lastAdDate');
-    const today = new Date().toDateString();
-    
-    if (lastAdDate !== today) {
-        await showAd();
-        localStorage.setItem('lastAdDate', today);
-    }
+    // Wait a bit for main app to load
+    setTimeout(async () => {
+        // Check if user has seen ad today
+        const lastAdDate = localStorage.getItem('lastAdDate');
+        const today = new Date().toDateString();
+        
+        if (lastAdDate !== today) {
+            await showAd();
+            localStorage.setItem('lastAdDate', today);
+        }
+    }, 2000);
 });
 
 async function showAd() {
@@ -35,7 +38,9 @@ async function showAd() {
                 `;
             }
             
-            adModal.classList.remove('hidden');
+            if (adModal) {
+                adModal.classList.remove('hidden');
+            }
         }
     } catch (error) {
         console.error("Error loading ad:", error);
@@ -44,5 +49,8 @@ async function showAd() {
 
 // Close ad modal
 window.closeAdModal = function() {
-    document.getElementById('ad-modal').classList.add('hidden');
+    const adModal = document.getElementById('ad-modal');
+    if (adModal) {
+        adModal.classList.add('hidden');
+    }
 };

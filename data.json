@@ -1,11 +1,6 @@
 {
     "videos": {
         "action": [            
-             {
-                "title": "Soldier Boy",
-                "thumb": "https://i.ytimg.com/vi/DQ6Ncovb8vc/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBONo9bONheJxJqDZzwXeJ84emjHw",
-                "src": "https://www.youtube.com/embed/0KRmE_Tuzuo"
-            }, 
             {
                 "title": "Soldier Boy",
                 "thumb": "https://i.ytimg.com/vi/DQ6Ncovb8vc/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBONo9bONheJxJqDZzwXeJ84emjHw",

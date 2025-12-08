@@ -1,44 +1,46 @@
-/* Custom CSS styles */
+/* Custom CSS styles if needed, mainly for non-tailwind things or specific overrides */
+
+/* Hide scrollbar for category menu but allow scrolling */
 #menu-bar::-webkit-scrollbar {
     display: none;
 }
 #menu-bar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
-/* Base Dark Theme */
+/* Base Dark Theme (Default) */
 .bg-darkbg {
-    background-color: #1A1A1A;
+    background-color: #1A1A1A; 
 }
 .bg-midbg {
-    background-color: #262626;
+    background-color: #262626; 
 }
 .text-primary {
-    color: #FFD700;
+    color: #FFD700; 
 }
 
-/* Active Category Button */
+/* !!! FIX: Active Category Button - Blue Color */
 .active-category-blue {
-    background-color: #3B82F6 !important;
+    background-color: #3B82F6 !important; /* Tailwind blue-500 */
     color: white !important;
 }
 
-/* Light Theme Classes */
+/* Light Theme Classes (unchanged, but adjusted for new blue color if needed) */
 .light-mode .bg-darkbg {
-    background-color: #F8F8F8;
+    background-color: #F8F8F8; 
 }
 .light-mode .bg-midbg {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; 
 }
 .light-mode .text-white {
-    color: #1A1A1A;
+    color: #1A1A1A; 
 }
 .light-mode .text-primary {
-    color: #CC9900;
+    color: #CC9900; 
 }
 .light-mode .bg-gray-800 {
-    background-color: #E5E5E5 !important;
+    background-color: #E5E5E5 !important; 
     color: #1A1A1A !important;
 }
 .light-mode .bg-gray-800:hover {
@@ -51,7 +53,7 @@
     border-color: #E5E5E5;
 }
 .light-mode .active-category-blue {
-    background-color: #1D4ED8 !important;
+    background-color: #1D4ED8 !important; /* Darker blue for light theme */
     color: white !important;
 }
 

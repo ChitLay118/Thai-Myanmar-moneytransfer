@@ -6,9 +6,8 @@
     <title data-i18n="title">WY MovieBox</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./firebase-config.js"></script>
-    <script type="module" src="./auth.js"></script>
     
-    <link rel="stylesheet" href="style.css?v=4.0">
+    <link rel="stylesheet" href="style.css?v=5.0">
 </head>
 <body id="body-root" class="bg-darkbg text-white min-h-screen pb-20 transition-colors duration-300">
 
@@ -33,7 +32,7 @@
                 </p>
 
                 <form id="auth-form">
-                    <div class="mb-4" id="username-field">
+                    <div class="mb-4" id="username-field" style="display: none;">
                         <label for="username" class="block text-sm font-medium text-slate-300 mb-1">
                             အသုံးပြုသူအမည် (Name)
                         </label>
@@ -121,7 +120,7 @@
                 </button>
             </div>
             
-            <div id="menu-bar" class="max-w-4xl mx-auto mt-4 flex space-x-2 overflow-x-auto whitespace-nowrap py-1">
+            <div id="menu-bar" class="max-w-4xl mx-auto mt-4 flex space-x-2 overflow-x-auto whitespace-nowrap py-1 pointer-events-none opacity-50">
                 <button class="menu-btn active-category active-category-blue text-white font-semibold px-4 py-2 rounded-full text-sm transition-all duration-200 hover:opacity-90" data-category="action" onclick="showCategory('action', this)">လှုပ်ရှားမှု</button>
                 <button class="menu-btn bg-gray-800 text-white font-semibold px-2 py-1 rounded-full text-sm transition-all duration-200 hover:bg-gray-700" data-category="drama" onclick="showCategory('drama', this)">ဒရာမာ</button>
                 <button class="menu-btn bg-gray-800 text-white font-semibold px-2 py-1 rounded-full text-sm transition-all duration-200 hover:bg-gray-700" data-category="cartoon" onclick="showCategory('cartoon', this)">ကာတွန်း</button>
@@ -158,7 +157,7 @@
             </section>
         </main>
 
-        <nav id="nav-bar" class="fixed bottom-0 left-0 right-0 bg-midbg border-t border-gray-700 shadow-2xl shadow-black/80 z-50">
+        <nav id="nav-bar" class="fixed bottom-0 left-0 right-0 bg-midbg border-t border-gray-700 shadow-2xl shadow-black/80 z-50 pointer-events-none opacity-50">
             <div class="max-w-xl mx-auto flex justify-around items-center h-16">
                 <button class="nav-btn flex flex-col items-center justify-center space-y-1 p-2 text-primary font-bold transition-colors duration-200" data-nav="home" onclick="changeNav(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M10 17v-6l2-2 2 2v6h5V8l-7-6-7 6v9h5z"/></svg>
@@ -188,18 +187,15 @@
             </div>
         </nav>
     </div>
-    <!-- Login Screen - Initially show only if not logged in -->
-<div id="login-screen" class="fixed inset-0 bg-darkbg z-[100] flex flex-col items-center justify-center p-4">
-    <!-- Your login UI here -->
-</div>
 
-<!-- Main App - Initially hidden -->
-<div id="main-app" class="hidden">
-    <!-- Your main app content here -->
-</div>
-
-    <script src="script.js?v=4.0"></script>
+    <script type="module" src="./auth.js?v=5.0"></script>
+    <script src="script.js?v=5.0"></script>
     <script type="module" src="./admin.js"></script>
     <script type="module" src="./ad-manager.js"></script>
+    
+    <!-- Simple Alert Modal -->
+    <div id="simple-alert" class="hidden fixed top-4 right-4 bg-red-600 text-white p-4 rounded-lg shadow-lg z-[110] max-w-sm">
+        <div id="alert-message"></div>
+    </div>
 </body>
 </html>

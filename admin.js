@@ -1,7 +1,51 @@
 import { db } from './firebase-config.js';
-import { collection, addDoc, getDocs, setDoc, doc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+import { collection, addDoc, getDocs, setDoc, doc, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
 
-// Add video to Firebase
+/**
+ * ၁။ Notification ပို့သည့် Function (NEW)
+ * Admin Panel ရှိ 'Send To All Users' ခလုတ်ကနေ ခေါ်သုံးပါမယ်။
+ */
+window.sendNotification = async function() {
+    const title = document.getElementById('admin-noti-title').value.trim();
+    const message = document.getElementById('admin-noti-msg').value.trim();
+
+    if (!title || !message) {
+        alert("ခေါင်းစဉ်နှင့် စာသား အပြည့်အစုံ ထည့်ပါဦး");
+        return;
+    }
+
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (!currentUser) {
+        alert("Admin အဖြစ် အကောင့်ဝင်ထားရန် လိုအပ်သည်");
+        return;
+    }
+
+    try {
+        // Firestore ရှိ 'notifications' collection ထဲကို သိမ်းမယ်
+        await addDoc(collection(db, 'notifications'), {
+            title: title,
+            message: message,
+            date: new Date().toLocaleString('en-GB', { 
+                day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' 
+            }),
+            timestamp: new Date().getTime(),
+            addedBy: currentUser.email
+        });
+
+        alert("အားလုံးထံ အကြောင်းကြားစာ ပို့ပြီးပါပြီ!");
+        
+        // Input တွေကို ပြန်ရှင်းမယ်
+        document.getElementById('admin-noti-title').value = "";
+        document.getElementById('admin-noti-msg').value = "";
+    } catch (error) {
+        console.error("Error sending notification:", error);
+        alert(`ပို့ဆောင်မှု မအောင်မြင်ပါ: ${error.message}`);
+    }
+};
+
+/**
+ * ၂။ Video ထည့်သည့် Function (မူရင်းအတိုင်း)
+ */
 window.addVideo = async function() {
     const title = document.getElementById('video-title').value.trim();
     const url = document.getElementById('video-url').value.trim();
@@ -31,8 +75,6 @@ window.addVideo = async function() {
         });
         
         alert("Video ထည့်သွင်းခြင်း အောင်မြင်ပါသည်!");
-        
-        // Clear inputs
         document.getElementById('video-title').value = '';
         document.getElementById('video-url').value = '';
         document.getElementById('video-thumb').value = '';
@@ -43,7 +85,9 @@ window.addVideo = async function() {
     }
 };
 
-// Add advertisement
+/**
+ * ၃။ ကြော်ညာထည့်သည့် Function (မူရင်းအတိုင်း)
+ */
 window.addAdvertisement = async function() {
     const adUrl = document.getElementById('ad-url').value.trim();
     
@@ -59,7 +103,6 @@ window.addAdvertisement = async function() {
     }
     
     try {
-        // Check if it's an image or video
         const isImage = adUrl.match(/\.(jpg|jpeg|png|gif|webp)$/i);
         const isVideo = adUrl.match(/\.(mp4|webm|ogg|mov)$/i);
         
@@ -86,7 +129,9 @@ window.addAdvertisement = async function() {
     }
 };
 
-// Load user list
+/**
+ * ၄။ User List ကို ဆွဲထုတ်ပြသည့် Function (မူရင်းအတိုင်း)
+ */
 window.loadUserList = async function() {
     try {
         const usersRef = collection(db, 'users');
@@ -105,7 +150,7 @@ window.loadUserList = async function() {
                         </div>
                     </div>
                     <div class="text-xs text-gray-500">
-                        ${new Date(user.createdAt).toLocaleDateString()}
+                        ${user.createdAt ? new Date(user.createdAt).toLocaleDateString() : 'N/A'}
                     </div>
                 </div>
             `;

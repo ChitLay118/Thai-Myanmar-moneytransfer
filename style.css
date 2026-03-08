@@ -152,3 +152,54 @@
     justify-content: space-between;
     align-items: center;
 }
+
+/* --- အသစ်ထပ်ပေါင်းထည့်လိုက်သော ကုဒ်များ (NEW STYLES) --- */
+
+/* Notification Sidebar Animation */
+@keyframes slideLeft {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.animate-slide-left {
+    animation: slideLeft 0.3s ease-out;
+}
+
+/* Profile UI Modern Styles */
+.profile-gradient-card {
+    background: linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.setting-item-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(38, 38, 38, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1.25rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.setting-item-card:hover {
+    background-color: rgba(55, 65, 81, 0.8);
+    transform: translateY(-1px);
+}
+
+/* Notification Item Styling */
+.noti-item {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-left: 4px solid #FFD700; /* primary gold color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.noti-time {
+    font-size: 0.65rem;
+    color: #888;
+    margin-top: 0.5rem;
+    display: block;
+}

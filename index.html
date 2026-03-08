@@ -110,13 +110,33 @@
         </div>
     </div>
 
+    <!-- Notification Sidebar (Added New) -->
+    <div id="noti-modal" class="hidden fixed inset-0 z-[110]">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="toggleNotiModal()"></div>
+        <div class="absolute right-0 top-0 h-full w-80 bg-midbg shadow-2xl p-6 flex flex-col border-l border-gray-700 animate-slide-left">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-white">Notifications</h2>
+                <button onclick="toggleNotiModal()" class="text-gray-400 hover:text-white text-2xl">✕</button>
+            </div>
+            <div id="noti-list" class="flex-1 overflow-y-auto space-y-4">
+                <p class="text-gray-500 text-center text-sm">အကြောင်းကြားစာမရှိသေးပါ။</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Main App (Initially Hidden) -->
     <div id="main-app" class="hidden">
         <header id="header-sticky" class="sticky top-0 z-50 bg-darkbg p-4 border-b border-gray-700 shadow-xl">
             <div class="max-w-4xl mx-auto flex justify-between items-center h-8">
                 <h1 class="text-3xl font-extrabold text-primary" data-i18n="title">WY MovieBox</h1>
-                <button onclick="logout()" class="text-sm text-gray-400 hover:text-white">
-                    ထွက်ရန်
+                
+                <!-- Updated: Removed "Logout" and added Notification Bell Icon -->
+                <button onclick="toggleNotiModal()" class="relative text-gray-400 hover:text-primary transition-colors p-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                    </svg>
+                    <!-- Small red badge for new notifications -->
+                    <span id="noti-badge" class="hidden absolute top-0 right-0 bg-red-600 w-3 h-3 rounded-full border-2 border-darkbg"></span>
                 </button>
             </div>
             
@@ -132,7 +152,7 @@
         <main id="main-content" class="max-w-full mx-auto px-4 min-h-[calc(100vh-160px)] flex flex-col">
             <div id="player-container" class="w-full max-w-3xl mx-auto rounded-xl overflow-hidden relative shadow-2xl shadow-primary/30 bg-black mt-4 mb-6 aspect-video sticky top-[135px] z-40">
                 <iframe id="iframePlayer" class="w-full h-full absolute top-0 left-0" 
-                        src="https://www.youtube.com/embed/YE7VzlLTP-4?autoplay=0" 
+                        src="" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
@@ -170,7 +190,7 @@
                 </button>
 
                 <button class="nav-btn flex flex-col items-center justify-center space-y-1 p-2 text-gray-400 hover:text-white transition-colors duration-200" data-nav="favorites" onclick="changeNav(this)">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                     <span class="text-xs">Favorites</span>
                 </button>
 
